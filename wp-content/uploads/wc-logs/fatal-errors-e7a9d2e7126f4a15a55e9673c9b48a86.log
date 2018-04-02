@@ -1,0 +1,150 @@
+2018-02-15T11:07:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-15T15:37:53+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:38:01+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:38:15+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:38:16+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:40:28+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:41:47+00:00 CRITICAL Uncaught Error: Call to undefined function wp_register_scripts() in C:\xampp\htdocs\barcelona\wp-content\themes\setwood-child\functions.php:33
+Stack trace:
+#0 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): barcelona_theme_enqueue_script('')
+#1 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\barcelona\wp-includes\script-loader.php(1435): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(286): wp_enqueue_scripts('')
+#5 C:\xampp\htdocs\barcelona\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\barcelona\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\barcelona\wp-includes\general-template.php(2614): do_action('wp_head')
+#8 C:\xampp\htdocs\barcelona\wp-content\themes\setwood\header.php(16): wp_head()
+#9 C:\xampp\htdocs\barcelona\wp-includes\
+
+2018-02-15T15:56:10+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-15T15:59:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-21T16:40:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T17:59:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T17:59:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:02:46+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:03:27+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:04:15+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:05:09+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:05:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:07:59+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:09:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:10:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:10:52+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-26T18:11:33+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:10:17+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:20:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:22:22+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:23:29+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:47:25+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:52:34+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:52:34+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:53:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:53:34+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:57:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:57:36+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T10:59:44+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:01:42+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:03:43+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:04:55+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:10:10+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:10:57+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-02-27T11:17:58+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-03-02T16:51:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
+
+2018-03-05T16:30:49+00:00 CRITICAL Maximum execution time of 60 seconds exceeded
+

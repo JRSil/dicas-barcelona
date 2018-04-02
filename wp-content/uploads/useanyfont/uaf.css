@@ -1,0 +1,13 @@
+			@font-face {
+				font-family: 'calibri-bold';
+				font-style: normal;
+				src: url('/barcelona/wp-content/uploads/useanyfont/180215011716Calibri-Bold.eot');
+				src: local('calibri-bold'), url('/barcelona/wp-content/uploads/useanyfont/180215011716Calibri-Bold.eot') format('embedded-opentype'), url('/barcelona/wp-content/uploads/useanyfont/180215011716Calibri-Bold.woff') format('woff');
+			}
+            
+            .calibri-bold{font-family: 'calibri-bold' !important;}
+            
+						h2, li{
+					font-family: 'calibri-bold' !important;
+				}
+		
