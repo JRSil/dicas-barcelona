@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/sass,visualstudiocode
 
@@ -21,3 +22,6 @@ wp-content/themes/setwood-child/node_modules/
 wp-content/themes/twentyfifteen/
 wp-content/themes/twentyseventeen/
 wp-content/themes/twentysixteen/
+=======
+node_modules
+>>>>>>> a0369a8eb29242fa3b6af3ce450b5e7d43170f59
