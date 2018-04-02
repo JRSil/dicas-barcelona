@@ -1,0 +1,63 @@
+/**
+ * WooCommerce AJAX Layered Nav
+ */
+/**
+ * Imports
+ */
+.bundle_form div.bundled_product_summary {
+  padding-bottom: 1.618em !important;
+  margin-bottom: 1.618em;
+  border-bottom: 1px solid #efefef; }
+  .bundle_form div.bundled_product_summary p.stock,
+  .bundle_form div.bundled_product_summary .price {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important; }
+
+@media (min-width: 48em) {
+  .bundle_form div.bundled_product_summary {
+    padding-right: 0; }
+    .bundle_form div.bundled_product_summary .bundled_product_images {
+      margin-right: 0;
+      width: 17.2413793103%;
+      float: right;
+      margin-left: 3.4482758621%; }
+      .bundle_form div.bundled_product_summary .bundled_product_images a {
+        margin: 0 !important; }
+      .bundle_form div.bundled_product_summary .bundled_product_images img {
+        width: 100% !important; }
+    .bundle_form div.bundled_product_summary .details {
+      width: 79.3103448276%;
+      float: left;
+      margin-left: 0;
+      font-size: .857em; }
+  .bundle_form div.bundled_product_summary.thumbnail_hidden {
+    padding-right: 0; }
+    .bundle_form div.bundled_product_summary.thumbnail_hidden .details {
+      width: 100%;
+      float: right;
+      margin-right: 0;
+      margin-left: 0; }
+  .page-template-template-fullwidth-php .bundle_form div.bundled_product_summary,
+  .setwood-full-width-content .bundle_form div.bundled_product_summary {
+    padding-right: 0; }
+    .page-template-template-fullwidth-php .bundle_form div.bundled_product_summary .bundled_product_images,
+    .setwood-full-width-content .bundle_form div.bundled_product_summary .bundled_product_images {
+      margin-right: 0;
+      width: 21.7391304348%;
+      float: right;
+      margin-left: 4.347826087%; }
+    .page-template-template-fullwidth-php .bundle_form div.bundled_product_summary .details,
+    .setwood-full-width-content .bundle_form div.bundled_product_summary .details {
+      width: 73.9130434783%;
+      float: left;
+      margin-left: 0;
+      font-size: 1em; }
+  .page-template-template-fullwidth-php .bundle_form div.bundled_product_summary.thumbnail_hidden,
+  .setwood-full-width-content .bundle_form div.bundled_product_summary.thumbnail_hidden {
+    padding-right: 0; }
+    .page-template-template-fullwidth-php .bundle_form div.bundled_product_summary.thumbnail_hidden .details,
+    .setwood-full-width-content .bundle_form div.bundled_product_summary.thumbnail_hidden .details {
+      width: 100%;
+      float: right;
+      margin-right: 0;
+      margin-left: 0; } }

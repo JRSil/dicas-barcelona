@@ -1,0 +1,58 @@
+/*!
+Theme Name:   	Setwood
+Theme URI:    	http://www.macrodreams.com/setwood
+Author:       	Macrodreams
+Author URI:		http://www.macrodreams.com
+Description:  	Setwood is a clean and easy-to-use WordPress Blog theme ideal for bloggers, photographers, designers crafters, hobbyists, creatives or just about anyone who likes to share stories  whether it's about life, fashion, travel, or just a simple personal blog. 
+Version:      	1.5.3
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 			one-column, two-columns, right-sidebar, left-sidebar, full-width, custom-colors, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain:  	setwood
+*/
+
+// Bourbon
+// See: http://bourbon.io/docs/
+@import 'bourbon';
+
+// Susy
+// Susy grid system. See: http://susydocs.oddbird.net/en/latest/
+@import 'node_modules/susy/sass/susy';
+
+// Utilities
+// Sass tools and helpers used across the project.
+@import 'assets/sass/utils/variables';
+@import 'assets/sass/utils/mixins';
+@import 'assets/sass/vendors/modular-scale';
+
+// Vendors
+// External libraries and frameworks
+@import 'assets/sass/vendors/normalize';
+@import 'assets/sass/vendors/font-awesome/variables';
+@import 'assets/sass/vendors/font-awesome/mixins';
+
+// Base
+// Holds what we might call the boilerplate code for the project.
+@import 'assets/sass/base/base';
+@import 'assets/sass/base/typography';
+
+// Layout
+// Contains everything that takes part in laying out the theme
+@import 'assets/sass/layout/layout';
+
+// Components
+// For smaller, less global components that do not belong in /layout
+@import 'assets/sass/components/forms';
+@import 'assets/sass/components/menu';
+@import 'assets/sass/components/content';
+@import 'assets/sass/components/post-formats';
+@import 'assets/sass/components/media';
+@import 'assets/sass/components/pagination';
+@import 'assets/sass/components/comments';
+@import 'assets/sass/components/widgets';
+@import 'assets/sass/components/extras';
+@import 'assets/sass/components/404';
+@import 'assets/sass/components/featured-slider';
+@import 'assets/sass/components/featured-block';
+@import 'assets/sass/components/slicknav';
+@import 'assets/sass/components/footer';

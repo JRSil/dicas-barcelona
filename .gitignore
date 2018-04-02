@@ -16,4 +16,8 @@
 
 # End of https://www.gitignore.io/api/sass,visualstudiocode
 # Para todos os arquivos e sub-pastas localizados na pasta vendor/
+
 wp-content/themes/setwood-child/node_modules/
+wp-content/themes/twentyfifteen/
+wp-content/themes/twentyseventeen/
+wp-content/themes/twentysixteen/

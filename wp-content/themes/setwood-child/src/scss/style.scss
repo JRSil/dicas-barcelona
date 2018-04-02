@@ -1,0 +1,1906 @@
+$first: #d50000;
+$second: #ff9600;
+$asideFontColor: #525255;
+$face: #3a589e;
+
+//*************               FONTES                ****************//
+
+@font-face {
+    font-family: 'FuturaBT-Medium';
+    src: url('../src/fonts/FuturaBT-Medium.eot') format('embedded-opentype'),  url('../src/fonts/FuturaBT-Medium.woff') format('woff'), url('../src/fonts/FuturaBT-Medium.ttf')  format('truetype'), url('../src/fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibri';
+    src: url('../src/fonts/Calibri.eot') format('embedded-opentype'),  url('../src/fonts/Calibri.woff') format('woff'), url('../src/fonts/Calibri.ttf')  format('truetype'), url('../src/fonts/Calibri.svg#Calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'calibri-bold';
+    src: url('../src/fonts/Calibri-Bold.eot') format('embedded-opentype'),  url('../src/fonts/Calibri-Bold.woff') format('woff'), url('../src/fonts/Calibri-Bold.ttf')  format('truetype'), url('../src/fonts/Calibri-Bold.svg#Calibri-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../src/fonts/icomoon.eot?tthttq');
+  src:  url('../src/fonts/icomoon.eot?tthttq#iefix') format('embedded-opentype'),
+    url('../src/fonts/icomoon.ttf?tthttq') format('truetype'),
+    url('../src/fonts/icomoon.woff?tthttq') format('woff'),
+    url('../src/fonts/icomoon.svg?tthttq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dc-love:before {
+  content: "\e900";
+  color: #a8a7a8;
+}
+.icon-dc-views:before {
+  content: "\e901";
+  color: #a8a7a8;
+}
+.icon-dc-comments:before {
+  content: "\e902";
+  color: #a8a7a8;
+}
+.icon-dc-share:before {
+  content: "\e903";
+  color: #a8a7a8;
+}
+
+.aligncenter{
+    margin: 0 auto;
+}
+p{
+    font-size: 1.1em;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+.fb-comments {
+    display: none!important;
+}
+
+//*************               HOME                ****************//
+
+#page.site{
+    .site-header{
+        .header-top-outer{
+            .header-top{
+                .header-top-inner{
+                    .socials{
+                        ul{
+                            margin: 0.5em 0;
+                        }
+                    }
+                    .search-toggle{
+                        padding: 0.5em 0;
+                        span{
+                            &:hover{
+                                color: $second!important;
+                            }
+                        }
+                        &:hover{
+                            color: $second;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-widget-region{
+        div.col-full{
+            .setwood_posts_widget.widget{
+                padding: 1.4em 0;
+                .widget-title{
+                    padding: 0;
+                    border-bottom: none;
+                    margin: 0 0 1.1em;
+                    h3{
+                        font-family: FuturaBT-Medium, sans-serif;
+                        font-size: 1.5em;
+                    }
+                }
+                .post-widget-slider{
+                    .post-slider{
+                        .slick-list{
+                            .slick-track{
+                                .grid-item.post.hentry{
+                                    .post-thumbnail{
+                                        margin: 0 0 0.4em 0;
+                                    }
+                                    .entry-header{
+                                        .entry-title{
+                                            font-family: calibri-bold;
+                                            font-size: 1.2em;
+                                            line-height: 1.1em;
+                                        }
+                                        .entry-meta-header.meta{
+                                            .posted-on{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slick-dots{
+                            bottom: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #content.site-content{
+        padding-top: 2em;
+        div.col-full{
+            #primary.content-area{
+                margin-bottom: 0em;
+                #main.site-main{
+                    section.post.hentry, article.post.hentry{
+                        margin: 0 0 3.5em;
+                        .entry-wrapper{
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+                            .post-thumbnail{
+                                margin-bottom: 0;
+                            }
+                            div.post-thumbnail {
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            }
+                            .entry-header{
+                                text-align: left;
+                                .cat-links{
+                                    display: inline-block;
+                                    margin-left: -1.618em;
+                                    background-color: $first;
+                                    padding: 3px 16px;
+                                    a{
+                                        font-family: FuturaBT-Medium;
+                                        text-decoration: none;
+                                        color: #fff;
+                                        margin: 0;
+                                        font-size: 1em;
+                                    }
+                                }
+                                .entry-title{
+                                    font-size: 2.5em;
+                                    line-height: 1em;
+                                    padding-left: 14px;
+                                }
+                                .entry-meta-header{
+                                    display: inline-block;
+                                    padding-left: 12px;
+                                    .posted-on{
+                                        display: none;
+                                        a{
+                                            .entry-date{
+                                                font-size: 0.9em;
+                                                text-transform: capitalize;
+                                                color: #a7a7a7;
+                                            }
+                                        }
+                                    }
+                                    .byline{
+                                        display: none;
+                                    }
+                                }
+                                .meta > span:after{
+                                    content: none;
+                                }
+                            }
+                            .entry-content{
+                                text-align: left;
+                                padding-left: 14px;
+                                margin: 0.5em 0 1em;
+                                .dicas-subtitle{
+                                    font-family: calibri-bold;
+                                    font-size: 1.75em;
+                                    color: #525255;
+                                    line-height: 1.2em;
+                                }
+                                p{
+                                    display: none;
+                                }
+                                h2, h3:not(.dicas-subtitle), h4, h5, h6{
+                                    margin-top: 20px;
+                                }
+                            }
+                            div.meta, aside.meta{
+                                .views{
+                                    color: #a7a7a7;
+                                    i{
+                                        font-size: 1.4em;
+                                        vertical-align: middle;
+                                    }
+                                }
+                                a{
+                                    color: #a7a7a7;
+                                }
+                            }
+                            aside.meta{
+                                span{
+                                    color: #a7a7a7;
+                                    &:after{
+                                        content: none;
+                                    }
+                                    i{
+                                        vertical-align: middle;
+	                                    color: #a7a7a7;
+                                    }
+                                }
+                                .comments-link{
+                                    padding-right: 1.2em;
+	                                border-right: 1px solid #a7a7a7;
+                                }
+                            }
+                        }
+                    }
+                    section.post.hentry{
+                        .entry-wrapper{
+                            .entry-header{
+                                .cat-links{
+                                    a{
+                                        font-size: 1.15em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    article.post.hentry{
+                        .entry-wrapper{
+                            padding: 0 1.618em 42.56px;
+                            position: relative;
+                            .entry-header{
+                                .cat-links{
+                                    margin-left: -1.618em;
+                                }
+                                .entry-title{
+                                    font-size: 1.75em;
+                                    padding-left: 12px;
+                                }
+                            }
+                            .entry-content{
+                                padding-left: 12px;
+                                .dicas-subtitle{
+                                    font-size: 1.2em;
+                                }
+                            }
+                            .entry-meta-footer.meta{
+                                padding: 0.518em 0;
+                                margin: 0 1.918em;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                .share-box-wrapper{
+                                    top: 100%;
+                                    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+                                    border: 0px solid #efefef;
+                                    margin-top: 0;
+                                    padding: 0.3em 0 0 0;
+                                    background-color: transparent;
+                                    .social-share{
+                                        ul{
+                                            li{
+                                                width: 21%;
+                                                height: 33px;
+                                                text-align: center;
+                                                border-radius: 5px;
+                                                float: left;
+                                                margin-left: 0.18em;
+                                                margin-right: 0.18em;
+                                                margin-bottom: 1.518em;
+                                                &:nth-of-type(1){
+                                                    background-color: $face;
+                                                }
+                                                &:nth-of-type(2){
+                                                    background-color: #429cd6;
+                                                }
+                                                &:nth-of-type(3){
+                                                    background-color: #df4b37;
+                                                }
+                                                &:nth-of-type(4){
+                                                    background-color: #bd081c;
+                                                }
+                                                a{
+                                                    width: 100%;
+                                                    font-size: 1.2em;
+                                                    line-height: 2;
+                                                    color: #fff;
+                                                    display: inline-block;
+                                                    .fa{
+                                                        color: #fff;
+                                                        margin-right: 0;
+                                                    }
+                                                    span{
+                                                        display: none;
+                                                    }
+                                                }
+                                                &:hover{
+                                                    opacity: 0.8;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .navigation.pagination{
+                        margin: 0;
+                        padding: 0 1.618em;
+                        background-color: #f7f7f7;
+                        box-shadow: none;
+                        .nav-links{
+                            .page-numbers{
+                                margin-top: 0.5em;
+                                li{
+                                    a.page-numbers{
+                                        background-color: #f7f7f7;
+                                        border: 1px solid #000;
+                                        font-family: calibri-bold;
+                                        color: #000;
+                                        &:hover{
+                                            background-color: #000;
+                                            color: #fff;
+                                        }
+                                    }
+                                    &:last-child{
+                                        a.page-numbers{
+                                            border: none;
+                                            &:hover{
+                                                border: 1px solid #000;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .next{
+                                font-family: calibri;
+                                .meta-nav{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fa.fa-facebook{
+    font-size: 13px;
+}
+
+.entry-meta-footer .social-share a{
+    color: #a7a7a7;
+}
+
+.main-navigation .menu ul a:hover, .main-navigation .menu ul li:hover > a{
+    background-color: initial;
+}
+
+//*************               PÁGINA INTERNA                ****************//
+
+.single{
+    #page.site{
+        #content.site-content{
+            .col-full{
+                #primary.content-area{
+                    #main.site-main{
+                        article.post.hentry{
+                            margin: 0 0 0.5em;
+                            .entry-wrapper{
+                                padding: 0 1.618em 1.618em 1.618em;
+                                .entry-header{
+                                    .posted-on{
+                                        display: none;
+                                    }
+                                    .entry-title{
+                                        font-family: calibri;
+                                        font-size: 2.5em;
+                                        padding-left: 0;
+                                        margin: 10px 0 20px;
+                                    }
+                                }
+                                .post-thumbnail{
+                                    margin-top: 0;
+                                }
+                                .tags-links{
+                                    a{
+                                        background-color: $second;
+                                        border: 1px solid $second;
+                                        font-family: calibri;
+                                        color: #fff;
+                                        &:hover{
+                                            background-color: $first;
+                                            border: 1px solid $first;
+                                        }
+                                    }
+                                }
+                                .entry-content{
+                                    padding-left: 0;
+                                    .dicas-subtitle{
+                                        padding-left: 0;
+                                        font-family: calibri;
+                                        font-size: 1.9em;
+                                        color: #525255;
+                                    }
+                                    div, p{
+                                        display: block;
+                                        a{
+                                            color: $first;
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                    div h2, div div h2, h2, h2.separator{
+                                        font-size: 1.7em;
+                                    }
+                                    div, div p{
+                                        img{
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                                .entry-meta-footer{
+                                    padding: 1.618em 0 1.618em;
+                                    .meta-left{
+                                        width: 100%;
+                                        float: none;
+                                        padding-bottom: 0.5em;
+                                    }
+                                    .meta-left, .meta a{
+                                        color: #a7a7a7;
+                                    }
+                                    .social-share{
+                                        width: 100%;
+                                        float: none;
+                                        text-align: center;
+                                        margin-bottom: 0;
+                                        ul{
+                                            li{
+                                                width: 21%;
+                                                height: 33px;
+                                                text-align: center;
+                                                border-radius: 5px;
+                                                margin-left: 0.18em;
+                                                margin-right: 0.18em;
+                                                margin-bottom: 1.518em;
+                                                &:nth-of-type(1){
+                                                    background-color: $face;
+                                                }
+                                                &:nth-of-type(2){
+                                                    background-color: #429cd6;
+                                                }
+                                                &:nth-of-type(3){
+                                                    background-color: #df4b37;
+                                                }
+                                                &:nth-of-type(4){
+                                                    background-color: #bd081c;
+                                                }
+                                                a{
+                                                    width: 100%;
+                                                    font-size: 1.2em;
+                                                    line-height: 2;
+                                                    color: #fff;
+                                                }
+                                                &:hover{
+                                                    opacity: 0.8;
+                                                }
+                                            }
+                                            li, li a{
+                                                display: inline-block;
+                                            }
+                                        }
+                                    }
+                                }
+                                .entry-meta-footer.wide{
+                                    padding: 1.618em 0 0;
+                                    .social-share{
+                                        ul{
+                                            li{
+                                                width: 23.9%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .navigation.post-navigation{
+                            margin: 1em 0 1.618em;
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.0);
+                            border-top: none;
+                            border-bottom: none;
+                            .nav-links{
+                                .nav-previous, .nav-next{
+                                    .meta-nav{
+                                        font-family: calibri;
+                                        font-size: 1em;
+                                        font-weight: 100;
+                                        color: #a7a7a7;
+                                        text-transform: none;
+                                        letter-spacing: 0;
+                                    }
+                                    .meta-nav-text{
+                                        font-family: calibri-bold;
+                                        font-size: 1.4em;
+                                        line-height: 1;
+                                    }
+                                }
+                            }
+                        }
+                        .related-posts{
+                            margin-top: 2em;
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.0);
+                            border-top: none;
+                            border-bottom: none;
+                            padding: 1.618em 1.618em 0.5em;
+                            .block-title{
+                                h3{
+                                    font-family: FuturaBT-Medium;
+                                    font-size: 1.5em;
+                                    margin-bottom: -11px;
+                                    span{
+                                        border-bottom: none;
+                                        padding: 0;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 38%;
+                                        border-bottom: 10px solid $first;
+                                    }
+                                }
+                            }
+                            .col-3{
+                                article.post.hentry{
+                                    margin: 0 2.8% 0 0;
+                                    &:nth-of-type(3){
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .fb-comments.fb_iframe_widget{
+                            display: none;
+                            width: 100%;
+                            background-color: #fff;
+                            margin-top: 2em;
+                            padding: 1.618em;
+                            .faceComm-wrapper{
+                                display: inline-block;
+                                height: 256px;
+                                .block-title{
+                                    height: 65px;
+                                    h3{
+                                        font-family: FuturaBT-Medium;
+                                        font-size: 1.5em;
+                                        span{
+                                            border-bottom: none;
+                                            padding: 0;
+                                            text-align: center;
+                                        }
+                                        &:after{
+                                            content: "";
+                                            display: inline-block;
+                                            width: 50%;
+                                            border-bottom: 10px solid $face;
+                                        }
+                                    }
+                                }
+                            }
+                            iframe{
+                                position: relative;
+                            }
+                        }
+                        #comments.comments-area{
+                            margin-top: 2em;
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.0);
+                            .block-title{
+                                h3.comments-title{
+                                    font-family: calibri-bold;
+                                    font-size: 1.8em;
+                                    span{
+                                        border-bottom: none;
+                                        padding: 0 0 0.4em;
+                                        text-align: center;
+                                    }
+                                    &:after{
+                                        content: "";
+                                        display: block;
+                                        width: 30%;
+                                        border-bottom: 10px solid $first;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+                            ol.comment-list{
+                                li.comment{
+                                    .comment-body{
+                                        .comment-content{
+                                            .comment-text{
+                                                .comment-meta cite.fn, p{
+                                                    font-family: calibri;
+                                                }
+                                            }
+                                            .reply{
+                                                a.comment-reply-link{
+                                                    font-family: calibri-bold;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    background-color: $first;
+                                                    padding: 0.3em 0.6em;
+                                                    float: left;
+                                                    margin-top: 10px;
+                                                    &:hover{
+                                                        background-color: #000;
+                                                    }
+                                                    &::after{
+                                                        content: "";
+                                                        margin-left: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .comment-respond{
+                                .comment-reply-title{
+                                    font-family: calibri-bold;
+                                    font-size: 1.5em;
+                                }
+                                .comment-form{
+                                    .form-submit{
+                                        .submit{
+                                            color: #fff;
+                                            background-color: #000;
+                                            border-color: #000;
+                                            &:hover{
+                                                color: #fff;
+                                                background-color: $first;
+                                                border-color: $first;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//*************               PÁGINAS CATEGORIAS                ****************//
+
+#page.site{
+    #content.site-content{
+        .col-full{
+            #primary.content-area{
+                #main.site-main{
+                    .archive-header{
+                        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.0);
+                        .archive-title{
+                            font-family: FuturaBT-Medium;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//*************               PÁGINAS QUEM SOMOS E CONTATO                ****************//
+
+#page.site{
+    #content.site-content{
+        .col-full{
+            #primary.content-area{
+                #main.site-main{
+                    .page.hentry{
+                        .entry-wrapper{
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+                            .page-header{
+                                .page-title{
+                                    font-family: FuturaBT-Medium;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .entry-content{
+                                .wpcf7{
+                                    form.wpcf7-form{
+                                        p{
+                                            input.wpcf7-submit{
+                                                color: #fff;
+                                                &:hover{
+                                                    background-color: $first;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//***********************              BUSCA               **************************//
+
+#page{
+    #content{
+        .col-full{
+            .content-area{
+                .site-main{
+                    .archive-header{
+                        .page-title{
+                            font-family: FuturaBT-Medium;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .no-results, .not-found{
+                        .page-content{
+                            .search-form{
+                                .search-submit{
+                                    color: #fff;
+                                    &:hover{
+                                        background-color: $first;
+                                        border-color: $first;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//***********************                    NAV                      **************************//
+ul.mega-menu-item{
+    display: inline-block;
+}
+
+#page{
+    #masthead{
+        .setwood-header-sticky{
+            box-shadow: 0px 1px 5px rgba(190, 190, 190, 0);
+            .sticky-content{
+                .main-navigation{
+                    .menu{
+                        .menu-item, .current-menu-item, .current-page-item{
+                            a{
+                                font-family: "calibri-bold";
+                                color: #000;
+                            }
+                        }
+                        .menu-item{
+                            a{
+                                &:hover{
+                                    color: $first;
+                                }
+                            }
+                        }
+                        .current-menu-item, .current-page-item{
+                            display: inline-block;
+                            a{
+                                display: inline-block;
+                                background: #000;
+                                color: #fff;
+                                padding: 4px 10px;
+                            }
+                        }
+                    }
+                    .sub-menu{
+                        background-color: $first;
+                        li.menu-item, li.menu-item a{
+                            transition: ease-in-out 0.2s;
+                        }
+                        li.menu-item{
+                            a{
+                                color: #fff;
+                                &:hover{
+                                    color: $first;
+                                }
+                            }
+                            &:hover{
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbar{
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+            .main-navigation{
+                ul li a{
+                    font-family: "calibri-bold";
+                }
+                .mega-menu-wrap{
+                    .mega-menu{
+                        .mega-current-menu-item, .mega-current-page-item{
+                            display: inline;
+                            background-color: #000;
+                            padding: 5px 8px;
+                            .mega-menu-link{
+                                display: inline;
+                                background: #000;
+                                color: #fff;
+                            }
+                        }
+                        .mega-menu-item.mega-toggle-on{
+                            color: $first;
+                            ul.mega-sub-menu{
+                                display: block;
+                                li.mega-menu-row{
+                                    ul.mega-sub-menu{
+                                        li.mega-menu-column{
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .mega-menu-item{
+                            margin: 0 15px 0 0;
+                            ul.mega-sub-menu{
+                                padding: 1.5em 1.5em 0;
+                                margin-top: 0;
+                                display: inline-block;
+                                li.mega-menu-row{
+                                    ul.mega-sub-menu{
+                                        display: inline-block;
+                                        padding: 0;
+                                        li.mega-menu-column{
+                                            display: none;
+                                            padding-right: 2.9em;
+                                            width: 31.3%;
+                                            ul.mega-sub-menu{
+                                                display: inline-block;
+                                                li.mega-menu-item{
+                                                    margin: 0;
+                                                    .mega-menu-link{
+                                                        transform: translateX(0px);
+                                                        transition: ease-in-out .3s;
+                                                        &:hover{
+                                                            transform: translateX(10px);
+                                                        }
+                                                    }
+                                                }
+                                                li.mega-menu-item.setwood_posts_widget{
+                                                    padding: 0px;
+                                                    .post-widget-slider{
+                                                        .post-slider{
+                                                            padding: 0;
+                                                            margin: 0;
+                                                            .slick-list{
+                                                                .slick-track{
+                                                                    .post{
+                                                                        width: auto;
+                                                                        margin-bottom: 0;
+                                                                        margin-left: 0;
+                                                                        margin-right: 0;
+                                                                        margin: 0;
+                                                                        .post-thumbnail{
+                                                                            margin: 0 0 0.2em;
+                                                                            a{
+                                                                                padding: 0em;
+                                                                                width: 100%;
+                                                                            }
+                                                                        }
+                                                                        .entry-header{
+                                                                            .entry-title{
+                                                                                a{
+                                                                                    font-size: 1.4em;
+                                                                                    color: #fff;
+                                                                                    text-transform: none;
+                                                                                    letter-spacing: 1px;
+                                                                                    line-height: 1.1em;
+                                                                                    transform: translateX(0);
+                                                                                    transition: ease-in-out .3s;
+                                                                                    padding: 0.24em 0em;
+                                                                                    &:hover{
+                                                                                        transform: translateX(10px);
+                                                                                    } 
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    div.post-widget-list{
+                                                        div.post-list{
+                                                            div.post-item{
+                                                                div.post-item-wrapper{
+                                                                    width: 64%;
+                                                                    display: inline-block;
+                                                                    float: right;
+                                                                    header.entry-header{
+                                                                        display: inline-block;
+                                                                        h4.entry-title{
+                                                                            a{
+                                                                                font-size: 1.1em;
+                                                                                letter-spacing: 0.5px;
+                                                                                line-height: 1.1em;
+                                                                                text-transform: none;
+                                                                                transform: translateX(0);
+                                                                                transition: ease-in-out .3s;
+                                                                                padding: 0 5.5em 0 0.7em;
+                                                                                &:hover{
+                                                                                    transform: translateX(8px);
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                                div.post-thumb{
+                                                                    width: 35%;
+                                                                    display: inline-block;
+                                                                    a{
+                                                                        display: inline-block;
+                                                                        width: 100%;
+                                                                        padding: 0;
+                                                                    }
+                                                                    img{
+                                                                        float: none;
+                                                                        width: 100%;
+                                                                        margin-right: 0;
+                                                                    }
+                                                                }
+                                                            }
+                                                            &::before{
+                                                                content: "";
+                                                                display: block;
+                                                                width: 96.2%;
+                                                                height: 5px;
+                                                                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                                                                position: absolute;
+                                                                top: 28.5%;
+                                                                left: 0;
+                                                            }
+                                                        }
+                                                        &:before{
+                                                            content: "";
+                                                            display: block;
+                                                            width: 96.2%;
+                                                            height: 5px;
+                                                            border-top: 1px solid rgba(255, 255, 255, 0.5);
+                                                            position: absolute;
+                                                            top: 66%;
+                                                            left: 0%;
+                                                        }
+                                                    }
+                                                    .after{
+                                                        div.post-list{
+                                                            &::after{
+                                                                content: "";
+                                                                display: block;
+                                                                width: 16%;
+                                                                height: 5px;
+                                                                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                                                                position: absolute;
+                                                                top: 28.5%;
+                                                                left: -16%;
+                                                            }
+                                                        }
+                                                        &::after{
+                                                            content: "";
+                                                            display: block;
+                                                            width: 16%;
+                                                            height: 5px;
+                                                            border-top: 1px solid rgba(255, 255, 255, 0.5);
+                                                            position: absolute;
+                                                            top: 66%;
+                                                            left: -16%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(2){
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //******************** MENU COM A LOGO MENOR **********************//
+
+        .setwood-header-sticky{
+            .sticky-content{
+                .main-navigation{
+                    .menu{
+                        .menu_item, .current_menu_item{
+                            a{
+                                font-family: "calibri-bold";
+                            }
+                        }
+                        .current_menu_item{
+                            padding: 4px 8px;
+                            background-color: #000;
+                            a{
+                                color: #fff;
+                                padding: 0;
+                            }
+                            &:hover{
+                                background-color: #000;
+                                a{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .search-toggle{
+                    &:hover{
+                        color: $first;
+                    }
+                }
+            }
+        }
+        //******************** MENU TOPO **********************//
+        .header-top-outer{
+            .header-top{
+                .header-top-inner{
+                    .secondary-navigation{
+                        .menu-top-menu-container{
+                            ul.menu{
+                                .menu-item, .page-item, .current-menu-item, .current-page-item{
+                                    a{
+                                        font-family: "calibri-bold";
+                                        padding: 0.5em 1em;
+                                    }
+                                }
+                                .current-menu-item, .current-page-item{
+                                    a{
+                                        color: $second;
+                                    }
+                                }
+                                .menu-item{
+                                    &:after{
+                                        content: "/";
+                                        color: #404040;
+                                        position: absolute;
+                                        top: 20%;
+                                        right: -3%;
+                                    }
+                                    &:last-child{
+                                        &:after{
+                                            content: "";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//***********************                    ASIDE                      **************************//
+
+#page{
+    #content{
+        div{
+            #secondary{
+                .theiaStickySidebar{
+                    .widget{
+                        margin: 0 0 2em;
+                    }
+                    #setwood_about_me-3.widget{
+                        padding: 0;
+                        margin: 0;
+                        .img-none{
+                            margin: 0;
+                            width: 100%;
+                        }
+                        .name, .position{
+                            font-family: "calibri-bold";
+                        }
+                        .name, .position, .sidebar-caption{
+                            padding: 0 1.618em 0;
+                            text-align: left;
+                            color: $asideFontColor;
+                        }
+                        .name{
+                            margin-top: 0.81575em;
+                            margin-bottom: 0em;
+                            padding: 0 1.018em 0; 
+                            font-size: 1.35em;
+                            line-height: 1.2em;
+                        }
+                        .position{
+                            padding: 0 1.4em 0;
+                            font-size: 1em;
+                        }
+                        .sidebar-caption{
+                            padding: 0 1.618em 1.618em;
+                        }
+                    }
+                    #setwood_socials-3.widget{
+                        margin: 1px 0;
+                        padding: 1.218em 1.618em;
+                        .socials{
+                            ul{
+                                li{
+                                    margin-right: 1.3em;
+                                    a{
+                                        background-color: #000;
+                                        .fa{
+                                            font-size: 1.2em;
+                                            vertical-align: middle;
+                                        }
+                                        &:hover{
+                                            background-color: $first;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .widget_text{
+                        padding: 1.618em 1.618em 1.418em;
+                    }
+                    .widget .widget-title{
+                        padding: 0 0 0.9em 0;
+                        h3{
+                            font-family: FuturaBT-Medium;
+                            font-size: 1.389em;
+                            font-weight: 400;
+                        }
+                    }
+                    .setwood_posts_widget{
+                        .post-widget-list{
+                            .post-list{
+                                .post-item{
+                                    margin-bottom: 1.618em;
+                                    .post-item-wrapper{
+                                        .entry-header{
+                                            .entry-title{
+                                                font-family: calibri-bold;
+                                                font-size: 1em;
+                                                line-height: 1em;
+                                            }
+                                            .entry-meta-header{
+                                                margin: 0em;
+                                                .posted-on{
+                                                    display: none;
+                                                    a{
+                                                        .entry-date{
+                                                            text-transform: capitalize;
+                                                            font-size: 0.9em;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .widget_categories{
+                        padding: 1.618em 1.618em 0.9em;
+                        .widget-title{
+                            margin: 0 0 0.6em;
+                        }
+                        ul{
+                            li.cat-item{
+                                padding-left: 0.2em;
+                                padding-bottom: 0.6em;
+                                color: #929292;
+                                a{
+                                    text-transform: uppercase;
+                                    font-size: 0.92em
+                                }
+                                &::before{
+                                    opacity: 0;
+                                }
+                            }
+                            li.cat-item, li.cat-item a{
+                                font-family: calibri-bold;
+                            }
+                        }
+                    }
+                    .widget_mc4wp_form_widget{
+                        .mc4wp-form{
+                            .mc4wp-form-fields{
+                                .mc-form-submit{
+                                    input{
+                                        color: #fff;
+                                        &:hover{
+                                            background-color: $first;
+                                            border-color: $first;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .widget_setwood_facebook_box{
+                        .widget-title{
+                            h3{
+                                font-size: 1.195em;
+                            }
+                        }
+                    }
+                    .widget_apsp_board_widget_free{
+                        .apsp-widget-free{
+                            .PIN_1521564225588_embed_grid.PIN_1521564225588_c3{
+                                max-width: 100%;
+                                box-shadow: 0.1px transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            .widget-area{
+                .widget{
+                    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0);
+                }
+            }
+        }
+    }
+}
+
+//***********************                    Footer                      **************************//
+
+footer.site-footer{
+    .footer-widgets{
+        padding: 3.706325903em 0 0.5em 0;
+        .col-full{
+            .block{
+                .widget{
+                    .widget-title{
+                        font-family: FuturaBT-Medium;
+                        font-size: 1.2em;
+                        padding: 0 0 0.9em 0;
+                        margin: 0 0 1.2em 0;
+                    }
+                    .position, .sidebar-caption{
+                        text-align: justify;
+                        color: #525255;
+                        margin: 1em 0 0;
+                    }
+                }
+                .widget_tp_widget_recent_tweets{
+                    .tp_recent_tweets{
+                        &::before{
+                            color: $first;
+                        }
+                        ul.slick-initialized{
+                            .slick-list{
+                                .slick-track{
+                                    li.slick-slide{
+                                        span{
+                                            font-family: calibri;
+                                            a{
+                                                font-family: calibri-bold;
+                                                color: #525255;
+                                            }
+                                        }
+                                        .twitter_time{
+                                            color: #a7a7a7;
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+                            }
+                            ul.slick-dots{
+                                li.slick-active{
+                                    button{
+                                        color: $first;
+                                        background-color: $first;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .widget_setwood_about_me{
+                    padding: 0 1.618em;
+                }
+                .widget_tag_cloud{
+                    .tagcloud{
+                        .tag-cloud-link{
+                            background-color: $second;
+                            font-family: calibri;
+                            &:hover{
+                                background-color: $first;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .site-info{
+        .col-full{
+            font-size: 0.9em;
+        }
+    }
+}
+
+//***********************                    Media Queries                      **************************//
+
+@media only screen and (max-width: 1150px){
+    #page.site{
+        #masthead.site-header{
+            .setwood-header-sticky{
+                .sticky-content{
+                    .site-branding-mini{
+                        width: 16%;
+                    }
+                }
+            }
+        }
+        #content.site-content{
+            div.col-full{
+                #primary.content-area{
+                    #main.site-main{
+                        article.post.hentry{
+                            .entry-wrapper{
+                                .entry-meta-footer.wide{
+                                    .social-share{
+                                        ul{
+                                            li{
+                                                width: 23.6%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .fb-comments.fb_iframe_widget{
+                            .faceComm-wrapper{
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .single{
+        #page.site{
+            #content.site-content{
+                .col-full{
+                    #primary.content-area{
+                        #main.site-main{
+                            article.post.hentry{
+                                .entry-wrapper{
+                                    .entry-meta-footer.wide{
+                                        .social-share{
+                                            ul{
+                                                li{
+                                                    width: 23.6%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #page.site{
+        margin: 0;
+        #masthead.site-header{
+            .header-top-outer{
+                .header-top{
+                    height: 49px;
+                    border: none;
+                    display: none;
+                    .header-top-inner{
+                        margin-left: 0;
+                        margin-right: 0;
+                        .menu-mobile{
+                            .slicknav_menu{
+                                padding: 0.2em 0;
+                                .slicknav_btn{
+                                    background-color: #000;
+                                    margin-left: 0.7em;
+                                    .slicknav_icon{
+                                        .slicknav_icon-bar{
+                                            background-color: #fff;
+                                        }
+                                    }
+                                }
+                                .slicknav_nav{
+                                    background-color: #222;
+                                    ul.menu{
+                                        li.menu-item, li.current-menu-item{
+                                            a{
+                                                font-family: calibri;
+                                                font-weight: 600;
+                                            }
+                                            .slicknav_row{
+                                                &:hover{
+                                                    background: none;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                        li.current-menu-item{
+                                            background-color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-toggle{
+                            top: 7px;
+                            right: 2.3em;
+                            span{
+                                background-color: #000;
+                                padding: 0.9em 1em;
+                                display: inline;
+                            }
+                        }
+                        .search-active{
+                            .search-box-wrapper{
+                                top: 46px;
+                                right: -17px;
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar{
+                .main-navigation{
+                    .mega-menu-wrap{
+                        .mega-menu{
+                            li.mega-menu-item.mega-toggle-on{
+                                .mega-sub-menu{
+                                    display: none;
+                                }
+                            }
+                            li.mega-menu-item{
+                                .mega-menu-link{
+                                    padding: 0px 7px 0px 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //***********************                    ASIDE TABLET                      **************************//
+
+    #page.site{
+        #content.site-content{
+            div.col-full{
+                #primary.content-area{
+                    #main.site-main{
+                        .fb-comments.fb_iframe_widget{
+                            .faceComm-wrapper{
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+                #secondary.widget-area{
+                    .widget{
+                        margin: 0 0 2em;
+                        .widget-title{
+                            padding: 0 0 1em;
+                            margin: 0 0 1.3em;
+                            h3{
+                                font-family: FuturaBT-Medium;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    .widget_setwood_about_me, .widget_setwood_socials{
+                        margin: 0 0 1px;
+                    }
+                    .widget_setwood_about_me{
+                        padding: 0;
+                        img{
+                            width: 100%;
+                        }
+                        .name, .position{
+                            font-family: calibri-bold;
+                            color: #525255;
+                            padding: 0 1.618em;
+                        }
+                        .name{
+                            font-size: 1.4em;
+                            margin-top: 0.5em;
+                            margin-bottom: 0;
+                        }
+                        .position{
+                            font-size: 1em;
+                        }
+                        .sidebar-caption{
+                            font-family: calibri;
+                            padding: 0 1.618em 1.618em;
+                        }
+                    }
+                    .widget_custom_html{
+                        padding: 1.618em 1.618em 1.3em;
+                    }
+                    .setwood_posts_widget{
+                        padding: 1.618em 1.618em 0.7em;
+                        .post-widget-list{
+                            .post-list{
+                                .post-item{
+                                    margin-bottom: 0.7em;
+                                    .post-item-wrapper{
+                                        .entry-header{
+                                            .entry-title{
+                                                font-family: calibri-bold;
+                                            }
+                                            .entry-meta-header{
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .widget_categories{
+                        padding: 1.618em 1.618em 0.7em;
+                        ul{
+                            .cat-item{
+                                a{
+                                    font-family: calibri-bold;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                    .widget_mc4wp_form_widget{
+                        .mc4wp-form{
+                            .mc4wp-form-fields{
+                                .mc-form-submit{
+                                    input{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body > .site{
+        margin: 0.9em 0 0 0;
+    }
+    #page.site{
+        #masthead.site-header{
+            .site-branding{
+                padding-top: 10px;
+                padding-bottom: 0px;
+                padding-left: 1.41575em;
+                padding-right: 1.41575em;
+                .site-title{
+                    a{
+                        display: inline-block;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //***********************                    Página de Post                      **************************//
+    .single{
+        #page.site{
+            #content.site-content{
+                .col-full{
+                    #primary.content-area{
+                        #main.site-main{
+                            article.post.hentry{
+                                .entry-wrapper{
+                                    .entry-header{
+                                        .entry-title{
+                                            padding-left: 0;
+                                        }
+                                    }
+                                    .entry-content{
+                                        padding-left: 0;
+                                    }
+                                    .entry-meta-footer.wide{
+                                        border-top: none;
+                                        margin: 0;
+                                        padding: 1.1em 0 0;
+                                        .social-share{
+                                            padding: 1.618em 0 0.2em 0;
+                                            ul{
+                                                li{
+                                                    width: 22.5%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .related-posts{
+                                position: relative;
+                                .block-title{
+                                    h3{
+                                        span{
+                                            &:after{
+                                                content: "";
+                                                display: none;
+                                            }
+                                        }
+                                        &:after{
+                                            content: "";
+                                            display: inline-block;
+                                            width: 38%;
+                                            border-bottom: 10px solid #d50000;
+                                        }
+                                    }
+                                }
+                            }
+                            .fb-comments.fb_iframe_widget{
+                                .faceComm-wrapper{
+                                    height: 280px;
+                                    .block-title{
+                                        height: auto;
+                                        margin-bottom: 1em;
+                                        h3{
+                                            margin-bottom: -12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //***********************                    Navegação Mobile                      **************************//
+
+    #page.site{
+        #masthead.site-header{
+            .navbar{
+                #site-navigation.main-navigation{
+                    .mega-menu-wrap{
+                        .mega-menu-toggle{
+                            background-color: #000;
+                            .mega-toggle-blocks-left{
+                                .mega-toggle-block{
+                                    margin-left: 1.3em;
+                                }
+                            }
+                        }
+                        .mega-menu{
+                            .mega-current-menu-item, .mega-current_page_item, .mega-menu-item{
+                                display: block;
+                                margin: 0;
+                                .mega-sub-menu{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-top-outer{
+                .header-top{
+                    height: 49px;
+                    border: none;
+                    display: none;
+                    .header-top-inner{
+                        margin-left: 0;
+                        margin-right: 0;
+                        .menu-mobile{
+                            .slicknav_menu{
+                                padding: 0.2em 0;
+                                .slicknav_btn{
+                                    background-color: #000;
+                                    .slicknav_icon{
+                                        .slicknav_icon-bar{
+                                            background-color: #fff;
+                                        }
+                                    }
+                                }
+                                .slicknav_nav{
+                                    background-color: #222;
+                                    ul.menu{
+                                        li.menu-item, li.current-menu-item{
+                                            a{
+                                                font-family: calibri;
+                                                font-weight: 600;
+                                            }
+                                            .slicknav_row{
+                                                &:hover{
+                                                    background: none;
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                        li.current-menu-item{
+                                            background-color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .search-toggle{
+                            top: 7px;
+                            right: 1.3em;
+                            span{
+                                background-color: #000;
+                                padding: 0.9em 1em;
+                                display: inline;
+                            }
+                        }
+                        .search-active{
+                            .search-box-wrapper{
+                                top: 46px;
+                                right: -17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #content.site-content{
+            padding-top: 0;
+            .col-full{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    //***********************                    ASIDE Mobile                      **************************//
+
+    #page.site{
+        #content.site-content{
+            div.col-full{
+                #secondary.widget-area{
+                    .widget{
+                        margin: 0 0 2em;
+                        .widget-title{
+                            padding: 0 0 1em;
+                            margin: 0 0 1.3em;
+                            h3{
+                                font-family: FuturaBT-Medium;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                    .widget_setwood_about_me, .widget_setwood_socials{
+                        margin: 0 0 1px;
+                    }
+                    .widget_setwood_about_me{
+                        padding: 0;
+                        img{
+                            width: 100%;
+                        }
+                        .name, .position{
+                            font-family: calibri-bold;
+                            color: #525255;
+                            padding: 0 1.618em;
+                        }
+                        .name{
+                            font-size: 1.4em;
+                            margin-top: 0.5em;
+                            margin-bottom: 0;
+                        }
+                        .position{
+                            font-size: 1em;
+                        }
+                        .sidebar-caption{
+                            font-family: calibri;
+                            padding: 0 1.618em 1.618em;
+                        }
+                    }
+                    .widget_custom_html{
+                        padding: 1.618em 1.618em 1.3em;
+                    }
+                    .setwood_posts_widget{
+                        padding: 1.618em 1.618em 0.7em;
+                        .post-widget-list{
+                            .post-list{
+                                .post-item{
+                                    margin-bottom: 0.7em;
+                                    .post-item-wrapper{
+                                        .entry-header{
+                                            .entry-title{
+                                                font-family: calibri-bold;
+                                            }
+                                            .entry-meta-header{
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .widget_categories{
+                        padding: 1.618em 1.618em 0.7em;
+                        ul{
+                            .cat-item{
+                                a{
+                                    font-family: calibri-bold;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                    .widget_mc4wp_form_widget{
+                        .mc4wp-form{
+                            .mc4wp-form-fields{
+                                .mc-form-submit{
+                                    input{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,234 @@
+/**
+ * Comments
+ */
+.comments-area {
+    @include card(3);
+  }
+#comments {
+  margin-top: ms(7);
+  .comment-list {
+    list-style: none;
+    margin-left: 0;
+    .comment-body {
+      @include clearfix;
+    }
+    .comment-content {
+      padding-bottom: ms(3);
+      margin-bottom: ms(3);
+      .comment-text {
+        p:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .comment-meta {
+      margin-bottom: 1em;
+      .avatar {
+        margin-bottom: 1em;
+        max-width: 64px;
+        height: auto;
+      }
+      a.comment-date {
+        font-size: ms(-1);
+        font-weight: 400;
+        color: $entry-meta-link-color;
+      }
+      cite {
+        font-style: normal;
+        font-weight: 600;
+        clear: both;
+        display: block;
+        color: $off-black;
+        font-family: $heading-font;
+        a {
+          color: inherit;
+        }
+      }
+    }
+    .bypostauthor {
+      > .comment-body cite {
+        &:after {
+          @include fa-icon();
+          margin-left: ms(-3);
+          content: "\f0f6";
+        }
+      }
+    }
+    .reply {
+      @include clearfix;
+      margin-bottom: ms(3);
+      padding-top: ms(-2);
+      a {
+        display: inline-block;
+        line-height: 1;
+        margin-right: 1em;
+        &:after {
+          @include fa-icon();
+          content: "\f112";
+          margin-left: ms(-3);
+        }
+        &.comment-edit-link {
+          &:after {
+            content: "\f040";
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .children {
+      list-style: none;
+    }
+  }
+}
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+#respond {
+  clear: both;
+  padding: ms(3);
+  background-color: rgba(0, 0, 0, 0.0125);
+  position: relative;
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    input {
+      width: 100%;
+    }
+  }
+  .form-submit,
+  form {
+    margin-bottom: 0;
+  }
+  #cancel-comment-reply-link {
+    position: absolute;
+    top: ms(-3);
+    right: ms(-3);
+    display: block;
+    height: 1em;
+    width: 1em;
+    overflow: hidden;
+    line-height: 1;
+    font-size: ms(2);
+    text-align: center;
+    @include transition(transform, ease, .3s);
+    &:hover {
+      @include transform(scale(1.3));
+    }
+    &:before {
+      @include fa-icon();
+      content: "\f057";
+      display: block;
+    }
+  }
+}
+
+
+/* Comments Structure */
+
+.comment-list {
+  @include clearfix;
+  .comment {
+    clear: both;
+  }
+  .comment-author {
+    @include span(1 of 9);
+    text-align: right;
+    .avatar {
+      float: right;
+      border-radius: 50%;
+    }
+  }
+  .comment-content {
+    padding-bottom: ms(6);
+    margin-bottom: ms(6);
+  }
+  .comment-content,
+  #respond {
+    @include span(last 8 of 9);
+  }
+  #respond {
+    float: right;
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .comment-body {
+    #respond {
+      box-shadow: 0 6px 2em rgba(#000, .2);
+      margin-bottom: ms(5);
+      margin-top: -ms(3);
+    }
+  }
+  .reply {
+    clear: both;
+    text-align: right;
+  }
+  ol.children {
+    @include span(last 8 of 9);
+    list-style: none;
+    .comment-author {
+      @include span(1 of 8);
+    }
+    .comment-content,
+    #respond {
+      @include span(last 7 of 8);
+    }
+    ol.children {
+      @include span(last 7 of 8);
+      .comment-author {
+        @include span(1 of 7);
+      }
+      .comment-content,
+      #respond {
+        @include span(last 6 of 7);
+      }
+      ol.children {
+        @include span(last 6 of 7);
+        .comment-author {
+          @include span(1 of 6);
+        }
+        .comment-content,
+        #respond {
+          @include span(last 5 of 6);
+        }
+        ol.children {
+          @include span(last 5 of 6);
+          .comment-author {
+            @include span(1 of 5);
+          }
+          .comment-content,
+          #respond {
+            @include span(last 4 of 5);
+          }
+        }
+      }
+    }
+  }
+}
+
+#respond {
+  .comment-reply-title {
+    font-size: ms(0);
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  padding: ms(3);
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    @include span(3 of 9);
+  }
+  .comment-form-url {
+    @include last;
+  }
+  .comment-form-comment {
+    clear: both;
+  }
+}

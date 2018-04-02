@@ -1,0 +1,304 @@
+/**
+ * Typography
+ */
+
+body {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 1em;
+}
+
+body,
+button,
+input,
+textarea {
+  color: $base-font-color;
+  font-family: $base-font;
+  line-height: 1.618;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+select {
+  color: initial;
+  font-family: $base-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: $base-heading-color;
+  font-family: $heading-font;
+  font-weight: 600;
+  margin: 0 0 ms(-2);
+  letter-spacing: -0.05em;
+  a {
+    font-weight: inherit;
+    color: inherit;
+    &:hover {
+      color: $base-heading-color-hover;
+    }
+  }
+}
+
+h1,
+.alpha {
+  font-size: ms(4);
+  line-height: 1.214;
+}
+
+h2,
+.beta {
+  font-size: ms(3);
+  & + h3 {
+    padding-top: ms(-3);
+  }
+}
+
+h3,
+.gamma {
+  font-size: ms(2);
+}
+
+h4,
+.delta {
+  font-size: ms(1);
+}
+
+h5,
+.omega {
+  font-size: ms(-1);
+}
+
+.alpha,
+.beta,
+.gamma,
+.delta,
+.omega {
+  display: block;
+}
+
+p,
+ul,
+ol,
+table,
+blockquote,
+form {
+  & + h2,
+  & + header h2,
+  & + h3,
+  & + h4 {
+    margin-top: ms(4);
+  }
+}
+
+hr {
+  background-color: $base-border-color;
+  border: 0;
+  height: 1px;
+  margin: 0 0 ms(1);
+}
+
+p {
+  margin: 0 0 ms(1);
+}
+
+ul,
+ol {
+  margin: 0 0 ms(1) 3em;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: ms(1);
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 0 ms(3);
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: ms(4) 0;
+  padding-left: 35px;
+  font-size: 1.168em;
+  position: relative;
+  font-family: $serif-font;
+  font-weight: 600;
+  color: $base-blockquote-color;
+  &:before {
+    color: $base-blockquote-color;
+    font-size: 60px;
+    position: absolute;
+    font-family: $georgia;
+    content: "\201C";
+    left: 0;
+    top: -25px;
+  }
+  &:after {
+    /*Reset to make sure*/
+    content: "";
+  }
+  cite {
+    margin: 0.53em 0 0;
+    position: relative;
+    display: block;
+    padding-left: 80px;
+    font-family: $base-font;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      display: block;
+      width: 60px;
+      background: $base-blockquote-color;
+      left: 0;
+      right: 100%;
+    }
+  }
+}
+
+address {
+  margin: 0 0 ms(1);
+}
+
+pre {
+  background: rgba(#000, .1);
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  margin-bottom: ms(3);
+  padding: ms(3);
+  overflow: auto;
+  max-width: 100%;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: .202em ms(-3);
+}
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark,
+ins {
+  text-decoration: none;
+  font-weight: 700;
+  background: transparent;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+small {
+  font-size: 75%;
+}
+
+big {
+  font-size: 125%;
+}
+
+figure {
+  margin: 0;
+}
+
+table {
+  margin: 0 0 ms(1);
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+
+img {
+  height: auto; // Make sure images are scaled correctly.
+  max-width: 100%; // Adhere to container width.
+  display: block;
+}
+
+a {
+  color: $base_link_color;
+  text-decoration: none;
+}
+
+.entry-content {
+  ul,
+  ol {
+    margin: 0 0 ms(1) 3em;
+    padding: 0;
+    li {
+      margin-bottom: ms(1);
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  ul {
+    list-style: square;
+  }
+  ol {
+    list-style: decimal;
+  }
+  li > ul,
+  li > ol {
+    margin: ms(1) 0;
+    margin-left: ms(1);
+  }
+}
+
+// Wait, what..?
+.setwood-cute * {
+  font-family: "Comic Sans MS", sans-serif;
+}
