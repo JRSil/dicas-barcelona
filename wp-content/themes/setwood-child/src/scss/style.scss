@@ -946,6 +946,15 @@ ul.mega-menu-item{
                                                     div.post-widget-list{
                                                         div.post-list{
                                                             div.post-item{
+                                                                height: 85px;
+                                                                padding-bottom: 0.5em;
+                                                                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                                                                margin-bottom: 1.1em;
+                                                                &:last-child{
+                                                                    border-bottom: none;
+                                                                    padding-bottom: 0;
+                                                                    margin-bottom: 0;
+                                                                }
                                                                 div.post-item-wrapper{
                                                                     width: 64%;
                                                                     display: inline-block;
@@ -960,7 +969,7 @@ ul.mega-menu-item{
                                                                                 text-transform: none;
                                                                                 transform: translateX(0);
                                                                                 transition: ease-in-out .3s;
-                                                                                padding: 0 5.5em 0 0.7em;
+                                                                                padding: 0 5.9em 0 0.7em;
                                                                                 &:hover{
                                                                                     transform: translateX(8px);
                                                                                 }
@@ -983,50 +992,36 @@ ul.mega-menu-item{
                                                                     }
                                                                 }
                                                             }
-                                                            &::before{
-                                                                content: "";
-                                                                display: block;
-                                                                width: 96.2%;
-                                                                height: 5px;
-                                                                border-top: 1px solid rgba(255, 255, 255, 0.5);
-                                                                position: absolute;
-                                                                top: 28.5%;
-                                                                left: 0;
-                                                            }
-                                                        }
-                                                        &:before{
-                                                            content: "";
-                                                            display: block;
-                                                            width: 96.2%;
-                                                            height: 5px;
-                                                            border-top: 1px solid rgba(255, 255, 255, 0.5);
-                                                            position: absolute;
-                                                            top: 66%;
-                                                            left: 0%;
                                                         }
                                                     }
-                                                    .after{
-                                                        div.post-list{
-                                                            &::after{
+                                                }
+                                            }
+                                            &:nth-of-type(3){
+                                                ul.mega-sub-menu{
+                                                    li.mega-menu-item.setwood_posts_widget{
+                                                        div.post-widget-list{
+                                                            .post-list{
+                                                                &::before{
+                                                                    content: "";
+                                                                    display: block;
+                                                                    width: 13.5%;
+                                                                    height: 5px;
+                                                                    border-top: 1px solid rgba(255, 255, 255, 0.5);
+                                                                    position: absolute;
+                                                                    top: 29.3%;
+                                                                    left: -13.6%;
+                                                                }
+                                                            }
+                                                            &:before{
                                                                 content: "";
                                                                 display: block;
-                                                                width: 16%;
+                                                                width: 13.5%;
                                                                 height: 5px;
                                                                 border-top: 1px solid rgba(255, 255, 255, 0.5);
                                                                 position: absolute;
-                                                                top: 28.5%;
-                                                                left: -16%;
+                                                                top: 64.3%;
+                                                                left: -13.6%;
                                                             }
-                                                        }
-                                                        &::after{
-                                                            content: "";
-                                                            display: block;
-                                                            width: 16%;
-                                                            height: 5px;
-                                                            border-top: 1px solid rgba(255, 255, 255, 0.5);
-                                                            position: absolute;
-                                                            top: 66%;
-                                                            left: -16%;
                                                         }
                                                     }
                                                 }

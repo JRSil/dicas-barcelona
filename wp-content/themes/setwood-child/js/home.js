@@ -33,11 +33,11 @@
 
         var lista = $('.mega-sub-menu div.post-widget-list');
         
-        if(lista.length > 1){
-            $.each(lista, function(key, val){
-                lista.addClass("after");
-            });
-        }
+        // if(lista.length > 1){
+        //     $.each(lista, function(key, val){
+        //         lista.addClass("after");
+        //     });
+        // }
         
 
         var iconeEye = $('.views i');
