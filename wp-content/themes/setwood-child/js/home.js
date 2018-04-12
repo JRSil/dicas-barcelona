@@ -1,6 +1,14 @@
 (function($){
     $(document).ready( function() {
 
+        var megaMenu = setInterval(function(){
+            if($('.mega-menu-link').length > 0){
+                $('.mega-menu-link').unbind('touchend');
+                $('.mega-menu-link').unbind('click');
+                clearInterval(megaMenu);
+            }
+        }, 500);
+
         //Pinterest box-shadow
         var pinterestBox = setInterval(function(){
             if($('.apsp-widget-free').length > 0){
@@ -152,6 +160,8 @@
                     }).css("display", "block");
                 }
             });
+        }else{
+            //$('.header-top-inner .search-toggle').addClass('search-active');
         }
 
     });

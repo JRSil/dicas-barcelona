@@ -85,30 +85,6 @@ h1, h2, h3, h4, h5 {
 //*************               HOME                ****************//
 
 #page.site{
-    .site-header{
-        .header-top-outer{
-            .header-top{
-                .header-top-inner{
-                    .socials{
-                        ul{
-                            margin: 0.5em 0;
-                        }
-                    }
-                    .search-toggle{
-                        padding: 0.5em 0;
-                        span{
-                            &:hover{
-                                color: $second!important;
-                            }
-                        }
-                        &:hover{
-                            color: $second;
-                        }
-                    }
-                }
-            }
-        }
-    }
     .header-widget-region{
         div.col-full{
             .setwood_posts_widget.widget{
@@ -861,10 +837,11 @@ ul.mega-menu-item{
                                 color: #fff;
                             }
                         }
-                        .mega-menu-item.mega-toggle-on{
+                        .mega-menu-item{
                             color: $first;
+                            margin: 0 15px 0 0;
                             ul.mega-sub-menu{
-                                display: block;
+                                display: none;
                                 li.mega-menu-row{
                                     ul.mega-sub-menu{
                                         li.mega-menu-column{
@@ -874,7 +851,7 @@ ul.mega-menu-item{
                                 }
                             }
                         }
-                        .mega-menu-item{
+                        .mega-menu-item.mega-toggle-on{
                             margin: 0 15px 0 0;
                             ul.mega-sub-menu{
                                 padding: 1.5em 1.5em 0;
@@ -885,7 +862,7 @@ ul.mega-menu-item{
                                         display: inline-block;
                                         padding: 0;
                                         li.mega-menu-column{
-                                            display: none;
+                                            display: inline-block;
                                             padding-right: 2.9em;
                                             width: 31.3%;
                                             ul.mega-sub-menu{
@@ -1008,7 +985,7 @@ ul.mega-menu-item{
                                                                     height: 5px;
                                                                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                                                                     position: absolute;
-                                                                    top: 29.3%;
+                                                                    top: 29.4%;
                                                                     left: -13.6%;
                                                                 }
                                                             }
@@ -1019,7 +996,7 @@ ul.mega-menu-item{
                                                                 height: 5px;
                                                                 border-top: 1px solid rgba(255, 255, 255, 0.5);
                                                                 position: absolute;
-                                                                top: 64.3%;
+                                                                top: 64.4%;
                                                                 left: -13.6%;
                                                             }
                                                         }
@@ -1077,7 +1054,58 @@ ul.mega-menu-item{
         .header-top-outer{
             .header-top{
                 .header-top-inner{
+                    .socials{
+                        ul{
+                            margin: 0.8em 0;
+                        }
+                    }
+                    .search-toggle{
+                        padding: 0;
+                        span{
+                            display: none;
+                            &:hover{
+                                color: $second!important;
+                            }
+                        }
+                        &:hover{
+                            color: $second;
+                        }
+                        a.screen-reader-text{
+                            display: none;
+                        }
+                        .search-box-wrapper{
+                            display: inline-block;
+                            position: absolute;
+                            top: 7px;
+                            right: 1594%;
+                            z-index: 9999999;
+                            background-color: transparent;
+                            padding: 1px 2px 2px;
+                            form.search-form{
+                                width: 475px;
+                                height: 28px;
+                                &::before{
+                                    position: absolute;
+                                    top: 0.25em;
+                                    left: 25.5em;
+                                    color: #fff;
+                                    font-size: 1.1em;
+                                }
+                                label{
+                                    input.search-field{
+                                        padding: 0.4em 0.6em 0.4em 0.6em;
+                                        padding-right: 2em;
+                                        border: 1px solid #242424;
+                                        background-color: #242424;
+                                        color: #fff;
+                                        font-size: 0.8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .secondary-navigation{
+                        margin-top: 0.3em;
                         .menu-top-menu-container{
                             ul.menu{
                                 .menu-item, .page-item, .current-menu-item, .current-page-item{
@@ -1373,6 +1401,15 @@ footer.site-footer{
                     }
                 }
             }
+            .header-top-outer{
+                .header-top{
+                    .header-top-inner{
+                        .search-active{
+                            right: 1497%;
+                        }
+                    }
+                }
+            }
         }
         #content.site-content{
             div.col-full{
@@ -1476,18 +1513,22 @@ footer.site-footer{
                             }
                         }
                         .search-toggle{
-                            top: 7px;
+                            top: 16px;
                             right: 2.3em;
                             span{
                                 background-color: #000;
                                 padding: 0.9em 1em;
                                 display: inline;
                             }
+                            .search-box-wrapper{
+                                display: none;
+                            }
                         }
                         .search-active{
                             .search-box-wrapper{
-                                top: 46px;
-                                right: -17px;
+                                top: -8px;
+                                right: 114px;
+                                display: inline-block;
                             }
                         }
                     }
@@ -1716,23 +1757,39 @@ footer.site-footer{
         #masthead.site-header{
             .navbar{
                 #site-navigation.main-navigation{
-                    .mega-menu-wrap{
+                    #mega-menu-wrap-primary.mega-menu-wrap{
                         .mega-menu-toggle{
                             background-color: #000;
+                            border-radius: 0px;
                             .mega-toggle-blocks-left{
                                 .mega-toggle-block{
                                     margin-left: 1.3em;
                                 }
                             }
                         }
-                        .mega-menu{
+                        #mega-menu-primary.mega-menu{
                             .mega-current-menu-item, .mega-current_page_item, .mega-menu-item{
                                 display: block;
                                 margin: 0;
                                 .mega-sub-menu{
                                     display: none;
                                 }
+                                a.mega-menu-link{
+                                    // &:focus{
+                                    //     background: #222;
+                                    //     color: #fff;
+                                    // }
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
                             }
+                            // li.mega-menu-item.mega-toggle-on{
+                            //     a.mega-menu-link{
+                            //         background: #222;
+                            //         color: #fff;
+                            //     }
+                            // }
                         }
                     }
                 }
@@ -1779,18 +1836,26 @@ footer.site-footer{
                             }
                         }
                         .search-toggle{
-                            top: 7px;
-                            right: 1.3em;
+                            top: 16px;
+                            right: 1.6em;
                             span{
                                 background-color: #000;
                                 padding: 0.9em 1em;
                                 display: inline;
                             }
+                            .search-box-wrapper{
+                                display: none;
+                            }
                         }
                         .search-active{
                             .search-box-wrapper{
-                                top: 46px;
-                                right: -17px;
+                                top: -6px;
+                                right: 28px;
+                                display: inline-block;
+                                form.search-form{
+                                    width: 251px;
+                                    height: 30px;
+                                }
                             }
                         }
                     }
