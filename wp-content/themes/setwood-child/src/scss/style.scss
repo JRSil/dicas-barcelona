@@ -1103,6 +1103,20 @@ ul.mega-menu-item{
                                 }
                             }
                         }
+                        .search-box-wrapper.widget_search{
+                            form.search-form{
+                                input.search-submit{
+                                    background-color: transparent;
+                                    clip: unset;
+                                    top: 0.1em;
+                                    left: 32em;
+                                    width: 26px;
+                                    height: 26px;
+                                    padding: 0;
+                                    border: none;
+                                }
+                            }
+                        }
                     }
                     .secondary-navigation{
                         margin-top: 0.3em;

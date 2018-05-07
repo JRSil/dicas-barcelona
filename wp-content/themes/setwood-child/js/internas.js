@@ -18,7 +18,7 @@
         $('.comment-respond .comment-reply-title').text('Deixe seu Comentário');
 
         var facebookChange = setInterval(function(){
-            if($('.related-posts').length > 0){
+            if(($('.related-posts').length > 0)&&($('.fb-comments').length > 0)){
                 $('.fb-comments > span').removeAttr("style");
                 $('.fb-comments > span').attr('class', "faceComm-wrapper");
                 $('.fb-comments span').prepend('<div class="block-title"><div>');
