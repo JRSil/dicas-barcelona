@@ -14,14 +14,14 @@ $face: #3a589e;
 
 @font-face {
     font-family: 'calibri';
-    src: url('../src/fonts/Calibri.eot') format('embedded-opentype'),  url('../src/fonts/Calibri.woff') format('woff'), url('../src/fonts/Calibri.ttf')  format('truetype'), url('../src/fonts/Calibri.svg#Calibri') format('svg');
+    src: url('../src/fonts/Calibri.eot') format('embedded-opentype'),  url('../src/fonts/Calibri.woff') format('woff'), url('../src/fonts/Calibri.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'calibri-bold';
-    src: url('../src/fonts/Calibri-Bold.eot') format('embedded-opentype'),  url('../src/fonts/Calibri-Bold.woff') format('woff'), url('../src/fonts/Calibri-Bold.ttf')  format('truetype'), url('../src/fonts/Calibri-Bold.svg#Calibri-Bold') format('svg');
+    src: url('../src/fonts/Calibri-Bold.eot') format('embedded-opentype'),  url('../src/fonts/Calibri-Bold.woff') format('woff'), url('../src/fonts/Calibri-Bold.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,6 +80,10 @@ h1, h2, h3, h4, h5 {
 }
 .fb-comments {
     display: none!important;
+}
+
+#breadcrumbs{
+    display: none;
 }
 
 //*************               HOME                ****************//
@@ -165,6 +169,10 @@ h1, h2, h3, h4, h5 {
                                     font-size: 2.5em;
                                     line-height: 1em;
                                     padding-left: 14px;
+                                    a{
+                                        font-family: calibri-bold;
+                                        font-weight: 200;
+                                    }
                                 }
                                 .entry-meta-header{
                                     display: inline-block;
@@ -769,6 +777,18 @@ ul.mega-menu-item{
     display: inline-block;
 }
 
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children > a.mega-menu-link:after{
+    content: '\f0d7';
+    font-family: "FontAwesome";
+    margin: 0 0 0 0.5em;
+}
+
+#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after, #mega-menu-wrap-primary .mega-menu-toggle.mega-menu-open .mega-toggle-block-1:after{
+    content: '\f0c9';
+    font-family: "FontAwesome";
+    margin: 0 0 0 0.3em;
+}
+
 #page{
     #masthead{
         .setwood-header-sticky{
@@ -835,6 +855,11 @@ ul.mega-menu-item{
                                 display: inline;
                                 background: #000;
                                 color: #fff;
+                                &::after{
+                                    content: '/f0d7';
+                                    font-family: "FontAwesome";
+                                    margin: 0 0 0 0.3em;
+                                }
                             }
                         }
                         .mega-menu-item{

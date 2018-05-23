@@ -1,0 +1,1 @@
+function maybePrefixUrlField(){""!==this.value.trim()&&0!==this.value.indexOf("http")&&(this.value="http://"+this.value)}var urlFields=document.querySelectorAll('.mc4wp-form input[type="url"]');if(urlFields&&0<urlFields.length)for(var j=0;j<urlFields.length;j++)addEventListener(urlFields[j],"blur",maybePrefixUrlField);

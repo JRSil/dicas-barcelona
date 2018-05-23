@@ -1,0 +1,296 @@
+/**
+ * Main Naivgation
+ */
+
+.navbar {
+  @include clearfix;
+  position: relative;
+  border-bottom: 0;
+  border-top: 1px solid $nav-border-color;
+}
+
+.secondary-navigation,
+.primary-navigation,
+.handheld-navigation {
+  display: none;
+  font-family: $heading-font;
+}
+
+.main-navigation ul {
+  margin-left: 0;
+  list-style: none;
+  font-family: $heading-font;
+  ul {
+    display: block;
+    margin-left: ms(2);
+  }
+  li {
+    a {
+      padding: ms(-3) ms(2);
+      text-transform: uppercase;
+      display: block;
+      font-weight: 500;
+      color: $nav-link-color;
+      &:hover {
+        color: $nav-link-color-hover;
+      }
+    }
+  }
+}
+
+.slicknav_menu {
+  display: block;
+}
+
+@include susy-media($desktop) {
+  .slicknav_menu {
+    display: none;
+  }
+  .primary-navigation {
+    display: inline-block;
+  }
+  .navbar {
+    border-bottom: 1px solid $nav-border-color;
+    border-top: 1px solid $nav-border-color;
+    background-color: $nav-background-color;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  }
+  .main-navigation,
+  .secondary-navigation {
+    clear: both;
+    display: block;
+    width: 100%;
+    font-size: ms(0);
+    // first level
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      display: block;
+      li {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+        a {
+          display: block;
+          &:before {
+            display: none;
+          }
+        }
+        > ul {
+          left: 0;
+          right: auto;
+        }
+        // link hover if out of the screen
+        &.edge {
+          > ul {
+            left: auto;
+            right: 0;
+          }
+        }
+        // link hover
+        &:hover,
+        &.focus {
+          > ul {
+            display: block;
+            li {
+              > ul {
+                display: none; // display: none; is required to make dropdowns work on touch devices
+              }
+              &:hover,
+              &.focus {
+                > ul {
+                  left: 100%;
+                  top: 0;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+      // second level
+      ul {
+        float: left;
+        position: absolute;
+        top: 100%;
+        z-index: 999999;
+        display: none; // display: none; is required to make dropdowns work on touch devices
+        li {
+          a {
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
+  ul.menu {
+    li {
+      &.current-menu-item {
+        > a {
+          color: $nav-link-color;
+        }
+      }
+    }
+  }
+  /**
+   * Primary Navigation
+   */
+  .main-navigation {
+    .menu {
+      > li {
+        // The first level menu item
+        > a {
+          padding: ms(1) ms(1);
+          font-weight: 500;
+          border-top: 0;
+        }
+        &:first-child {
+          margin-left: -(ms(1));
+        }
+      }
+      ul {
+        margin-left: 0;
+        margin-top: 0;
+        li {
+          a {
+            padding: ms(0) ms(1);
+            color: $menu-primary-link-color;
+          }
+        }
+        ul {
+          margin-left: 0;
+          margin-top: 0;
+        }
+        a:hover,
+        li:hover > a {
+          color: $menu-primary-link-color-hover;
+          background-color: $menu-primary-background-color-hover;
+        }
+      }
+    }
+    a {
+      padding: 0 ms(1) ms(4);
+    }
+    li {
+      &.menu-item-has-children,
+      &.page_item_has_children {
+        > a {
+          &:after {
+            // The dropdown indicator
+            content: "\f107";
+            font-family: "FontAwesome";
+            float: right;
+            margin-left: ms(-3);
+          }
+        }
+      }
+    }
+    .sub-menu,
+    .children {
+      background-color: $menu-dropdown-background-color;
+      min-width: 280px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+      li {
+        border-bottom: 1px solid $base-border-color;
+        &:first-child {
+          > a {
+            border-top: 1px solid $base-accent-color;
+          }
+        }
+        &:last-child {
+          border-bottom: 0;
+        }
+        &.menu-item-has-children,
+        &.page_item_has_children {
+          > a {
+            &:after {
+              // The dropdown indicator
+              content: "\f105";
+            }
+          }
+        }
+      }
+    }
+  }
+  /**
+   * Secondary Navigation
+   */
+  .secondary-navigation {
+    width: auto;
+    clear: none;
+    line-height: inherit;
+    .menu {
+      > li {
+        // The first level menu item
+        > a {
+          padding: ms(1) ms(1);
+          font-weight: 500;
+          border-top: 0;
+        }
+        &:first-child {
+          margin-left: -(ms(1));
+        }
+      }
+      ul {
+        margin-left: 0;
+        margin-top: 0;
+        li {
+          a {
+            padding: ms(0) ms(1);
+            color: $menu-secondary-link-color;
+          }
+        }
+        ul {
+          margin-left: 0;
+          margin-top: 0;
+        }
+        a:hover,
+        li:hover > a {
+          color: $menu-secondary-link-color-hover;
+          background-color: $menu-secondary-background-color-hover;
+        }
+      }
+    }
+    a {
+      padding: 0 ms(1) ms(4);
+    }
+    li {
+      &.menu-item-has-children,
+      &.page_item_has_children {
+        > a {
+          &:after {
+            // The dropdown indicator
+            content: "\f107";
+            font-family: "FontAwesome";
+            float: right;
+            margin-left: ms(-3);
+          }
+        }
+      }
+    }
+    .sub-menu,
+    .children {
+      background-color: $menu-dropdown-background-color;
+      min-width: 280px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+      li {
+        border-bottom: 1px solid $base-border-color;
+        &:first-child {
+          > a {
+            border-top: 1px solid $base-accent-color;
+          }
+        }
+        &.menu-item-has-children,
+        &.page_item_has_children {
+          > a {
+            &:after {
+              // The dropdown indicator
+              content: "\f105";
+            }
+          }
+        }
+      }
+    }
+  }
+}

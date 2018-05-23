@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){var i;i={queriedPost:new wp.customize.Value},wp.customize.bind("ready",function(){wp.customize.previewer.bind("queried-post",function(e){i.queriedPost.set(e||!1)})}),i.queriedPost.bind(function(e,i){window.kirkiPost=!1,(e||i)&&(window.kirkiPost=e||i)})});

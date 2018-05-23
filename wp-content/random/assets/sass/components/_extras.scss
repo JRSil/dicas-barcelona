@@ -1,0 +1,210 @@
+/**
+ * Extras
+ */
+
+
+/**
+ * Helpers
+ */
+
+.text-center {
+  text-align: center;
+}
+
+.new-line {
+  @include break;
+}
+
+.no-new-line {
+  @include nobreak;
+}
+
+/**
+ * Post Like
+ */
+
+.dot-irecommendthis {
+  margin: 0;
+}
+
+.dot-irecommendthis:hover,
+.dot-irecommendthis.active {
+  color: $base-accent-color;
+}
+
+.dot-irecommendthis {
+  .dot-irecommendthis-count {
+    &:before {
+      @include fa-icon();
+      content: "\f08a";
+      margin-right: 0.53em;
+    }
+  }
+}
+
+/**
+ * Bloglovin icon
+ */
+
+.fa-bloglovin:before {
+    content: "\f08a";
+}
+
+/**
+ * Search Toggle
+ */
+
+.search-toggle {
+  cursor: pointer;
+  float: right;
+  padding: ms(1) 0;
+  line-height: 1.168;
+  color: $topsection-link-color;
+  &:hover {
+    color: $topsection-link-color-hover;
+  }
+}
+
+.search-toggle .screen-reader-text {
+  left: 5px;
+  /* Avoid a horizontal scrollbar when the site has a long menu */
+}
+
+.search-box-wrapper {
+  display: none;
+}
+
+.search-active {
+  position: relative;
+  .search-box-wrapper {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 9999999;
+    background-color: $form-background-color;
+    padding: 10px;
+  }
+  .search-box-wrapper form {
+    margin-bottom: 0;
+    width: 328px;
+    text-align: center;
+  }
+}
+
+/**
+ * Related Posts.
+ */
+
+.related-posts {
+  margin-top: ms(6);
+  @include card(3);
+  @include clearfix;
+  .hentry {
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 0;
+    .post-thumbnail {
+      margin: 0 0 ms(3) 0;
+    }
+    .entry-title {
+      @extend .delta;
+      margin-bottom: 0;
+    }
+  }
+  .entry-meta-header {
+    text-align: center;
+    border: none;
+    padding: 0;
+  }
+}
+
+
+/**
+ * Social Icons.
+ */
+
+.socials ul {
+  margin: 0;
+  width: auto;
+  clear: none;
+  line-height: 1.168;
+  > li {
+    &:hover > a {
+      text-decoration: none;
+    }
+    position: relative;
+    margin-right: ms(-3);
+    display: inline-block;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  span {
+    display: none;
+  }
+}
+
+.site-footer {
+  .socials ul {
+    font-size: ms(1);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    > li {
+      margin: 1.168em;
+    }
+    a {
+      font-family: $heading-font;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    span {
+      display: none;
+      margin-left: ms(-3);
+    }
+  }
+}
+
+@include susy-media($desktop) {
+  .site-footer {
+    .socials ul {
+      span {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+/**
+ * Infinite Scroll
+ */
+
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+
+.infinite-scroll .paging-navigation,
+
+/* Older / Newer Posts Navigation (always hidden) */
+
+.infinite-scroll .pagination,
+
+/* Older / Newer Posts Navigation (always hidden) */
+
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+
+.infinity-end.neverending .site-footer {
+  display: block;
+}

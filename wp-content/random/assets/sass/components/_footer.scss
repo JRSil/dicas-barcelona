@@ -1,0 +1,41 @@
+/**
+ * Footer
+ */
+
+
+/* Back to top */
+
+.site-footer {
+    .go-to-top-parent {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 1.168em;
+        text-align: center;
+        z-index: 10;
+        span {
+            text-transform: uppercase;
+            font-size: 0.857em;
+            letter-spacing: 0.236em;
+            line-height: 1;
+            display: inline-block;
+            transition: all 0.3s;
+            @include clearfix;
+        }
+        i {
+            z-index: 5;
+            position: relative;
+            transition: all 0.3s;
+            line-height: 1;
+            margin-bottom: 3px;
+        }
+    }
+    .go-to-top:hover {
+        span,
+        i {
+            color: #000;
+        }
+    }
+}

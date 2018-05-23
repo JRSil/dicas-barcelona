@@ -1,0 +1,1 @@
+function addEventListener(t,e,n){t.addEventListener?t.addEventListener(e,n,!1):t.attachEvent&&t.attachEvent("on"+e,n)}

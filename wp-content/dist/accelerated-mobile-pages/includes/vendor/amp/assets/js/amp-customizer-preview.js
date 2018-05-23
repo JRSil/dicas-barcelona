@@ -1,0 +1,1 @@
+!function(t){"use strict";jQuery("a").click(function(t){var e=this.getAttribute("href");return!(!e||0!==e.indexOf("#"))})}();

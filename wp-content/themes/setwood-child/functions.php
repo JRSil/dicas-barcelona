@@ -95,7 +95,13 @@ function dicas_metabox() {
    }
    add_action( 'save_post', 'dicas_save_custom_metabox_data' );
 
-
+    // remove dashicons in frontend to non-admin
+    function wpdocs_dequeue_dashicon() {
+        if ( ! is_user_logged_in() ) {
+            wp_deregister_style( 'dashicons' );
+        }
+    }
+    add_action( 'wp_enqueue_scripts', 'wpdocs_dequeue_dashicon' );
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */

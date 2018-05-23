@@ -1,0 +1,167 @@
+// Some common variables and mixins to get you started.
+// Variables allow you to re-use colors, sizes, and other values without repeating
+// yourself. This means that changes that should be small, such as tweaking the
+// coloring or the sizing, can be done in one place, not all over the stylesheet.
+$base-font: 		'Lato', sans-serif;
+$serif-font:		'Poppins', sans-serif;
+$heading-font:		'Poppins', sans-serif;
+$ms-base:			1em,.875em;
+$ms-ratio:			1.618;
+
+// Theme Colors (private vars)
+//------------------------------------------------------------------------------
+$off-black:   #1c1e1f;
+$dark-gray:   #434343;
+$medium-gray: #767676;
+$light-gray:  #b2b2b2;
+$fog:         #c0c0c0;
+$medium-fog:  #efefef;
+$light-fog:   #f5f5f5;
+$white:       #fff;
+$sapphire:    #50aeb5;
+
+// Global Base Colors
+//------------------------------------------------------------------------------
+$base-background-color:           $white;
+$base-font-color:                 $medium-gray;
+$base-border-color:               $medium-fog;
+$base-accent-color:               $sapphire;
+$base-heading-color:              $off-black;
+$base-heading-color-hover:        $base-accent-color;
+$base-blockquote-color:           $off-black;
+$base-link-color:                 $off-black;
+$base-link-color-hover:           $base-accent-color;
+$base-selection-background-color: $off-black;
+$base-selection-color:            $white;
+$cta-background-color:            $dark-gray;
+
+// Button Colors
+//------------------------------------------------------------------------------
+$base-button-background-color:       $white;
+$base-button-background-color-hover: $sapphire;
+$base-button-font-color:             $dark-gray;
+$base-button-font-color-hover:       $white;
+$cta-button-background-color:        $dark-gray;
+$cta-button-background-color-hover:  $sapphire;
+$cta-button-font-color:              $white;
+$cta-button-font-color-hover:        $white;
+
+// Form Colors
+//------------------------------------------------------------------------------
+$form-background-color  : $light-fog;
+$input-background-color : $white;
+$form-font-color        : $base-font-color;
+$form-border-color      : $base-border-color;
+$form-border-color-hover: darken($base-border-color, 5);
+$form-border-color-focus: darken($base-border-color, 20);
+
+// Header Colors
+//------------------------------------------------------------------------------
+$header-background-color:$white;
+$header-border-color    :$base-border-color;
+$header-font-color      :$dark-gray;
+$header-link-color      :$off-black;
+
+// Navigation Colors
+//------------------------------------------------------------------------------
+$nav-background-color                 : $white;
+$nav-border-color                     : $base-border-color;
+$nav-link-color                       : $dark-gray;
+$nav-link-color-hover                 : $base-accent-color;
+
+$menu-primary-background-color        : $nav-background-color;
+$menu-primary-background-color-hover  : $white;
+$menu-primary-border-color            : $base-border-color;
+$menu-primary-link-color              : $nav-link-color;
+$menu-primary-link-color-hover        : $nav-link-color-hover;
+
+$menu-secondary-background-color      : $nav-background-color;
+$menu-secondary-background-color-hover: $white;
+$menu-secondary-border-color          : $base-border-color;
+$menu-secondary-link-color            : $medium-gray;
+$menu-secondary-link-color-hover      : $nav-link-color-hover;
+
+$menu-dropdown-background-color : $white;
+
+// Top Section Colors
+//------------------------------------------------------------------------------
+$topsection-background-color: $light-fog;
+$topsection-border-color:     $base-border-color;
+$topsection-font-color:       $medium-gray;
+$topsection-link-color:       $medium-gray;
+$topsection-link-color-hover: $base-accent-color;
+
+// Mobile Navigation
+
+// Slick Nav theme
+$color_0: rgba(255, 255, 255, 0.75);
+$color_btn: $white;
+$color_text: $off-black;
+$color_shadow: $off-black;
+$color_bg: transparent;
+$color_hover_bg: $white;
+$color_hover_text: $off-black;
+
+// Entry Colors
+//------------------------------------------------------------------------------
+$entry-meta-font-color            : $light-gray;
+$entry-meta-link-color            : $light-gray;
+$entry-meta-link-color-hover      : $dark-gray;
+$entry-meta-border-color          : $base-border-color;
+$entry-meta-background-color      : $light-fog;
+$gallery-caption-background-color : $off-black;
+$gallery-caption-font-color       : $white;
+$entry-category-link-color        : $sapphire;
+$entry-category-link-color-hover  : $sapphire;
+
+$author-box-background-color      : $white;
+$author-box-font-color            : $base-font-color;
+$author-box-border-color          : $base-border-color;
+$author-box-link-color            : $base-link-color;
+$author-box-link-color-hover      : $base-link-color-hover;
+$author-box-meta-link-color       : $entry-meta-link-color;
+$author-box-meta-link-color-hover : $entry-meta-link-color-hover;
+
+// Base Widget Colors
+//------------------------------------------------------------------------------
+$widget-border-color    : $base-border-color;
+$widget-background-color: $white;
+$widget-link-color      : $base-link-color;
+$widget-link-color-hover: $base-link-color-hover;
+
+// Footer Widgets Colors
+//------------------------------------------------------------------------------
+$footer-widgets-background-color:              $white;
+$footer-widgets-font-color:                    $base-font-color;
+$footer-widgets-heading-color:                 $base-heading-color;
+$footer-widgets-link-color:                    $base-link-color;
+$footer-widgets-link-color-hover:              $base-link-color-hover;
+$footer-widgets-border-color:                  $medium-fog;
+$footer-widgets-button-background-color:       $base-button-background-color;
+$footer-widgets-button-font-color:             $base-button-font-color;
+$footer-widgets-button-background-color-hover: $base-button-background-color-hover;
+$footer-widgets-button-font-color-hover:       $base-button-font-color-hover;
+
+// Footer Colors
+//------------------------------------------------------------------------------
+$footer-background-color: $light-fog;
+$footer-font-color:       $base-font-color;
+$footer-border-color:     $base-border-color;
+$footer-link-color:       $medium-gray;
+$footer-link-color-hover: $off-black;
+
+$error            : #db4344;
+$success          : #fcc32c;
+$info             : #51bcbf;
+
+// layout sizes
+$vspacing         : 1.618em;
+// Breakpoints
+$mobile           : 30em; // 480px
+$tablet           : 40em; // 640px
+$tablet-wide      : 48em; // 768px
+$desktop          : 64em; // 1024px
+$widescreen       : 71.25em; // 1140px
+
+$susy: ( columns: 12, gutters: 1/2, math: fluid, output: float, gutter-position: after, last-flow: to, use-custom: ( box-sizing: true, ), );
+$narrow-gutter: ( gutters: 1/6);

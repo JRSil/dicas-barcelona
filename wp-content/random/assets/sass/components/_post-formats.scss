@@ -1,0 +1,117 @@
+/**
+ * Post Formats
+ */
+
+.blog .format-aside,
+.archive .format-aside {
+    .entry-title {
+        display: none;
+    }
+}
+
+.has-post-thumbnail {
+    .entry-media {
+        position: relative;
+        div.mejs-container.wp-audio-shortcode {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            margin-left: -45%;
+            width: 90% !important;
+            z-index: 999;
+        }
+        blockquote {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -45%;
+            width: 90% !important;
+            z-index: 999;
+            display: block;
+            padding: 15px 20px 15px 45px;
+            border: 1px solid $base-border-color;
+            margin-bottom: $vspacing;
+            background: #FFF;
+            &:before {
+                font-family: $georgia;
+                color: $base-blockquote-color;
+                font-size: 60px;
+                position: absolute;
+                font-style: normal;
+                content: "\201C";
+                left: 10px;
+                top: -15px;
+            }
+            &:after {
+                /*Reset to make sure*/
+                content: "";
+            }
+            cite {
+                margin: ms(-3) 0 0;
+                position: relative;
+                display: block;
+                padding-left: 80px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    height: 1px;
+                    display: block;
+                    width: 60px;
+                    background: $base-border-color;
+                    left: 0;
+                    right: 100%;
+                }
+            }
+            p {
+                margin: 0;
+            }
+        }
+        iframe[src*="soundcloud.com"] {
+            position: absolute;
+            bottom: 0;
+            max-height: 150px;
+            z-index: 1;
+            width: 100%;
+            left: 50%;
+            margin: -50% 0 0 -50%;
+            padding: 10px;
+        }
+    }
+}
+
+.format-icon {
+    color: #FFF;
+    font-size: ms(0);
+    position: absolute;
+    display: block;
+    bottom: ms(3);
+    right: ms(3);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: none;
+    text-align: center;
+    border:1px solid rgba(180, 180, 180, 0.5);
+}
+
+.entry-media .gallery-item {
+    position: relative;
+}
+
+.gallery-item a:after,
+.format-image .post-thumbnail a:after {
+    content: "\f002";
+    font-family: "FontAwesome";
+    opacity: 0;
+    @extend .format-icon;
+    transition: all 0.35s ease-in-out;
+}
+
+.gallery-item a:hover:after,
+.format-image .post-thumbnail a:hover:after {
+    opacity: 1;
+    @extend .format-icon;
+}

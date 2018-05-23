@@ -1,0 +1,5 @@
+/*
+Cache: remove-style-meta
+*/
+/* remove-style-meta: (http://localhost/barcelona/wp-content/plugins/wp-author-date-and-meta-remover/css/entrymetastyle.css) */
+ .entry-footer{ display:none!important; } .home .entry-footer{ display:none; } .entry-meta{ display:none!important; } .home .entry-meta{ display:none; }

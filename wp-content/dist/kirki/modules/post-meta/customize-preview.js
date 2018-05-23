@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){var e={queriedPost:_.isUndefined(_customizePostPreviewedQueriedObject)?null:_customizePostPreviewedQueriedObject};wp.customize.bind("preview-ready",function(){wp.customize.preview.bind("active",function(){wp.customize.preview.send("queried-post",e.queriedPost)})})});

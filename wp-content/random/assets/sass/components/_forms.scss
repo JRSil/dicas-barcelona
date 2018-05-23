@@ -1,0 +1,188 @@
+/**
+ * Forms
+ */
+
+form {
+    margin-bottom: ms(3);
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    /* Corrects font size not being inherited in all browsers */
+    margin: 0;
+    /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+    vertical-align: baseline;
+    /* Improves appearance and consistency in all browsers */
+    *vertical-align: middle;
+    /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.added_to_cart {
+    border: 1px;
+    border-style: solid;
+    background: none;
+    background-color: $base-button-background-color;
+    border-color: $base-border-color;
+    color: $base-button-font-color;
+    cursor: pointer;
+    /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    line-height: 1;
+    letter-spacing: 1px;
+    padding: ms(0) ms(3);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: ms(-1);
+    font-weight: 600;
+    text-shadow: none;
+    display: inline-block;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    vertical-align: top;
+    transition: color 0.3s ease;
+    &.cta,
+    &.alt {
+        background-color: $cta-button-background-color;
+        border-color: $cta-button-background-color;
+        color: $cta-button-font-color-hover;
+        &:hover {
+            background-color: $cta-button-background-color-hover;
+            color: $cta-button-font-color-hover;
+        }
+    }
+    &:hover {
+        color: $base-button-font-color-hover;
+        background-color: $base-button-background-color-hover;
+        border-color: $base-button-background-color-hover;
+    }
+    &:focus {
+        border: 1px solid $form-border-color-focus;
+    }
+    &.added {
+        &:after {
+            content: "\f00c";
+            font-family: "FontAwesome";
+            margin-left: ms(-3);
+        }
+    }
+    &.loading {
+        opacity: 0.5;
+    }
+    &.small {
+        padding: ms(-3) ms(0);
+        font-size: ms(0);
+    }
+    &.disabled,
+    &:disabled {
+        opacity: 0.5 !important;
+        &:hover {
+            opacity: 0.5 !important;
+        }
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+    /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"]::-webkit-search-decoration {
+    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    box-sizing: border-box; // Overrules normalize.css.
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+.input-text {
+    padding: ms(-2);
+    color: $form-font-color;
+    line-height: 1;
+    outline: none;
+    -webkit-appearance: none;
+    font-weight: normal;
+    border: 1px solid $form-border-color;
+    background-color: $input-background-color;
+    &:hover {
+        border: 1px solid darken($base-border-color, 5);
+    }
+    &:focus {
+        border: 1px solid $form-border-color-focus;
+    }
+}
+
+textarea {
+    overflow: auto;
+    /* Removes default vertical scrollbar in IE6/7/8/9 */
+    padding-left: ms(0);
+    vertical-align: top;
+    /* Improves readability and alignment in all browsers */
+    width: 100%;
+}
+
+label {
+    font-weight: 700;
+}
+
+label.inline {
+    input {
+        width: auto;
+    }
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-bottom: ms(3);
+    legend {
+        font-weight: 700;
+    }
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    -webkit-transition: opacity 0.5s 0.5s ease;
+    -moz-transition: opacity 0.5s 0.5s ease;
+    transition: opacity 0.5s 0.5s ease;
+    opacity: 0;
+}
+
+
+/**
+ * Contact Forms 7
+ */
+
+.wpcf7 {
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    textarea,
+    .input-text {
+        width: 100%;
+    }
+}

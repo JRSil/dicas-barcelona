@@ -1,0 +1,865 @@
+/*-----------------------------------------------------------------------------
+
+	Clearfix
+
+-----------------------------------------------------------------------------*/
+
+
+
+.clear {
+
+    clear: both;
+
+}
+
+
+
+.clearfix:after {
+
+    content: ".";
+
+    clear: both;
+
+    visibility: hidden;
+
+    line-height: 0;
+
+    height: 0;
+
+    display: block;
+
+}
+
+
+
+/*-----------------------------------------------------------------------------
+
+	Backend css
+
+-----------------------------------------------------------------------------*/
+
+
+
+.apsp-setting-tabs {
+
+  background: none repeat scroll 0 0 #222222;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+
+  float: left;
+
+  margin: 0 2% 0 0;
+
+  width: 23%;
+
+}
+
+
+
+.apsp-form-wrap {
+
+	background: none repeat scroll 0 0 #ffffff;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	box-sizing: border-box;
+
+	float: left;
+
+	padding: 20px;
+
+	width: 73%;
+
+	-webkit-box-shadow: 0 0 5px #cccccc;
+
+	box-shadow: 0 0 5px #cccccc;
+
+}
+
+
+
+.apsp-backend-wrapper {
+
+	margin-top: 20px;
+
+}
+
+
+
+.apsp-setting-tabs li a {
+
+	border-bottom: 1px solid #cccccc;
+
+	color: #ffffff;
+
+	display: block;
+
+	font-size: 14px;
+
+	font-weight: 600;
+
+	line-height: 25px;
+
+	padding: 0 5px;
+
+	text-decoration: none;
+
+	position: relative;
+
+	-webkit-transition: background 0.5s ease;
+
+	-o-transition: background 0.5s ease;
+
+	transition: background 0.5s ease;
+
+}
+
+
+
+.apsp-setting-tabs li a:focus{
+
+	border:none;
+
+	box-shadow: none;
+
+}
+
+
+
+.apsp-setting-tabs li a:hover,
+
+.apsp-setting-tabs li a.apsp-active-tab{
+
+	background: #BC091C;
+
+}
+
+
+
+.apsp-setting-tabs > li {
+
+	margin-bottom: 0;
+
+}
+
+
+
+.apsp-setting-tabs i {
+
+	margin-right: 8px;
+
+}
+
+
+
+.apsp-title {
+
+  background: none repeat scroll 0 0 #bc091c;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 38px;
+
+  margin: 0 0 16px;
+
+  padding: 0 15px;
+
+}
+
+
+
+.apsp-sub-title {
+
+  background: none repeat scroll 0 0 #eeeeee;
+
+  color: #333333;
+
+  line-height: 34px;
+
+  padding: 0 15px;
+
+}
+
+
+
+.apsp-select-wrapper {
+
+  border-bottom: 1px solid #cccccc;
+
+  margin-bottom: 15px;
+
+  padding-bottom: 15px;
+
+}
+
+
+
+.apsp-select-wrapper label {
+
+  display: inline-block;
+
+  font-size: 14px;
+
+  width: 70px;
+
+}
+
+
+
+.apsp-reset-button, 
+
+.apsp-save-btn, 
+
+.demo-link {
+
+  background: none repeat scroll 0 0 #bc091c;
+
+  border: medium none;
+
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  font-size: 14px;
+
+  height: 35px;
+
+  line-height: 35px;
+
+   padding: 0 10px;
+
+  text-decoration: none;
+
+  -webkit-transition: background 0.5s ease;
+
+  -o-transition: background 0.5s ease;
+
+  transition: background 0.5s ease;
+
+}
+
+.apsp-reset-button:hover, 
+
+.apsp-save-btn:hover{
+
+	background: #990917;
+
+}
+
+
+
+.apsp-btn-wrap {
+
+  text-decoration: none;
+
+}
+
+
+
+.apsp-message {
+
+  background: none repeat scroll 0 0 #ffffff;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+  display: block;
+
+  margin-top: 20px;
+
+  padding: 10px 15px;
+
+  width: 98%;
+
+  border-top: 3px solid #03AD39;
+
+  border-radius: 5px;
+
+  box-shadow: 1px 1px 2px #cccccc;
+
+}
+
+
+
+.apsp-message > p {
+
+  color: #03ad39;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin: 0;
+
+  text-transform: capitalize;
+
+  position: relative;
+
+  padding: 0 0 0 28px;
+
+}
+
+
+
+.apsp-message > p:before{
+
+	content: "\f00c";
+
+	font-family:"FontAwesome";
+
+	font-size: 20px;
+
+    font-weight: 400;
+
+    left: 0;
+
+    position: absolute;
+
+    top: -4px;
+
+}
+
+
+
+.apsp-setting-header {
+
+  background: none repeat scroll 0 0 #333333;
+
+  border-bottom: 3px solid #bc091c;
+
+  border-radius: 5px 5px 0 0;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+  color: #ffffff;
+
+  margin-top: 20px;
+
+  padding: 10px 15px;
+
+  width: 98%;
+
+}
+
+
+
+.apsp-headerlogo {
+
+  float: left;
+
+  min-height: 40px;
+
+  padding-top: 25px;
+
+}
+
+
+
+.apsp-right-header-block {
+
+  float: right;
+
+  text-align: right;
+
+}
+
+
+
+.apsp-logo {
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  line-height: 86px;
+
+}
+
+
+
+.pinterest-logo-title{
+
+  color: #C90C1F;
+
+}
+
+
+
+
+
+.apsp-disable-pinit-js {
+
+  float: left;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  width: 23%;
+
+}
+
+
+
+.check-box-disable .apsp-info {
+
+  color: #808080;
+
+  font-size: 12px;
+
+  font-style: italic;
+
+}
+
+
+
+.check-box-disable {
+
+  float: right;
+
+  width: 77%;
+
+}
+
+
+
+/********* About us css ******/
+
+
+
+.about-desc-wrap {
+
+    float: left;
+
+    width: 65%;
+
+}
+
+
+
+.about-img-wrap {
+
+    float: right;
+
+    width: 35%;
+
+}
+
+
+
+.about-pinterest-wrapper {
+
+    -webkit-box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    width: 100%;
+
+}
+
+
+
+.about-title {
+
+    background: none;
+
+    border: medium none;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    padding: 0;
+
+}
+
+
+
+.about-content {
+
+    color: #141414;
+
+    font-size: 13px;
+
+    line-height: 24px;
+
+}
+
+
+
+.about-desc-wrap {
+
+    padding: 0;
+
+    width: 100%;
+
+}
+
+
+
+.about-img-wrap img {
+
+    border: 5px solid #ededed;
+
+}
+
+
+
+.about-title > span {
+
+    color: #7b7b7b;
+
+    font-size: 18px;
+
+}
+
+
+
+.more-title {
+
+  background: none repeat scroll 0 0 #f1f1f1;
+
+  color: #141414;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  line-height: 47px;
+
+  text-align: center;
+
+  width: 100%;
+
+}
+
+
+
+.more-product > li {
+
+  float: left;
+
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  width: 33.33%;
+
+}
+
+
+
+.more-product > li a{
+
+    text-decoration: none;
+
+}
+
+
+
+.prod-title {
+
+  color: #141414;
+
+  display: block;
+
+  font-size: 19px;
+
+  font-weight: 700;
+
+  line-height: 26px;
+
+  margin: 20px auto;
+
+  text-decoration: none;
+
+  width: 40%;
+
+}
+
+
+
+.about-social > li {
+
+  float: left;
+
+  text-align: center;
+
+  width: 16.66%;
+
+}
+
+
+
+.about-social .fa {
+
+  color: #ffffff;
+
+  display: block;
+
+  font-size: 35px;
+
+  font-weight: 400;
+
+  height: 50px;
+
+  line-height: 50px;
+
+  margin: 0 auto;
+
+  -webkit-transition: background 0.5s ease 0s;
+
+  -moz-transition: background 0.5s ease 0s;
+
+  -ms-transition: background 0.5s ease 0s;
+
+  transition: background 0.5s ease 0s;
+
+  width: 50px;
+
+}
+
+
+
+.about-social a{
+
+    display: block;
+
+    text-decoration: none;
+
+}
+
+
+
+.about-social .fb .fa{
+
+    background: #3d5c99; 
+
+}
+
+
+
+.about-social .twt .fa{
+
+    background: #2aa8dd; 
+
+}
+
+
+
+.about-social .gp .fa{
+
+    background: #cc3838; 
+
+}
+
+
+
+.about-social .utube .fa{
+
+    background: #cc3535; 
+
+}
+
+
+
+.about-social .skype .fa{
+
+    background: #1eb2ef; 
+
+}
+
+
+
+.about-social .pin .fa{
+
+    background: #c8232f; 
+
+}
+
+
+
+.about-social .fb .fa:hover{
+
+    background: #354e80; 
+
+}
+
+
+
+.about-social .twt .fa:hover{
+
+    background: #2593c3; 
+
+}
+
+
+
+.about-social .gp .fa:hover{
+
+    background: #9f3535; 
+
+}
+
+
+
+.about-social .utube .fa:hover{
+
+    background: #b03434; 
+
+}
+
+
+
+.about-social .skype .fa:hover{
+
+    background: #118dc0; 
+
+}
+
+
+
+.about-social .pin .fa:hover{
+
+    background: #a6212b; 
+
+}
+
+
+
+
+
+.about-social span {
+
+  color: #141414;
+
+  display: block;
+
+  font-size: 15px;
+
+  line-height: 10px;
+
+  margin: 10px 0;
+
+}
+
+
+
+.about-social span .bold {
+
+  display: block;
+
+  font-weight: 700;
+
+}
+
+
+
+.save-seting {
+
+  padding: 0 20px 10px;
+
+}
+
+
+
+.social-iframe {
+
+  padding: 20px;
+
+}
+
+
+
+.social-iframe iframe {
+
+  width: 100% !important;
+
+}
+
+
+
+.demo-link{
+
+	margin-bottom: 10px;
+
+}
+
+
+
+.about-content > ul {
+
+  list-style: outside none disc;
+
+  margin: 0 0 20px;
+
+  padding-left: 30px;
+
+}
+
+
+
+/*
+
+
+
+*/
+
+
+
+.apsp-add-wrapper {
+
+  float: left;
+
+  width: 28%;
+
+  margin-top: 20px;
+
+}
+
+
+
+.apsp-main-wrapper {
+
+  float: left;
+
+  width: 70%;
+
+}
+
+
+
+.apsp-promo-buttons a {
+
+  margin: 0 18px;
+
+}

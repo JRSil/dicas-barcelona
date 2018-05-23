@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){var n,o,e;n=0,o=bstw_pointers.pointers[n],e=t.extend(o.options,{close:function(){t.post(ajaxurl,{pointer:o.pointer_id,action:"dismiss-wp-pointer"})}}),t(o.target).pointer(e).pointer("open")});

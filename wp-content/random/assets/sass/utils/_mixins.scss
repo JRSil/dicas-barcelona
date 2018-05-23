@@ -1,0 +1,95 @@
+@mixin clearfix {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin hoverActiveFocus() {
+    &:hover,
+    &:active,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin screen-reader-text() {
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+@mixin message($glyph: "\f05a", $color: $info) {
+    padding: 1em ms(3) 1em ms(6);
+    background: rgba( $color, .7);
+    margin-bottom: ms(5);
+    font-weight: normal;
+    position: relative;
+    color: #fff;
+    text-shadow: none;
+    &:before {
+        font-family: 'FontAwesome';
+        content: $glyph;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: ms(5);
+        background: rgba( darken( $color, 3%), .7);
+        text-align: center;
+        padding: 1em ms(-2);
+        font-weight: normal !important;
+        text-shadow: none;
+    }
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    a.button {
+        background: #fff;
+        color: $color;
+        font-size: ms(-1);
+        padding: .202em ms(-2);
+        &:hover,
+        &:active {
+            background: rgba(#fff, .8);
+            color: $color;
+        }
+    }
+}
+
+@mixin underlinedLink() {
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin card($size: 1) {
+    background-color: $white;
+    //border: 1px solid $base-border-color;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.05);
+    @if $size == 5 {padding:ms(5);}
+    @if $size == 4 {padding:ms(4);}
+    @if $size == 3 {padding:ms(3);}
+    @if $size == 2 {padding:ms(2);}
+    @if $size == 1 {padding:ms(1);}
+}

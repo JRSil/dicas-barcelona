@@ -1,0 +1,1 @@
+!function(i){function t(t){t.on("keyup change",function(){"visual"===bstw(t.id).get_mode()&&bstw(t.id).update_content(),i("#"+t.id).change()}),i("#"+t.id).addClass("active").removeClass("activating")}var n;for(n in tinyMCEPreInit.mceInit)0<=n.search("black-studio-tinymce")&&(tinyMCEPreInit.mceInit[n].setup=t)}(jQuery);

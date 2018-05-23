@@ -1,0 +1,6 @@
+/**
+ * Jetpack
+ */
+.jetpack_subscription_widget #subscribe-email input {
+  padding: ms(-2) !important;
+  width: 100% !important; }
